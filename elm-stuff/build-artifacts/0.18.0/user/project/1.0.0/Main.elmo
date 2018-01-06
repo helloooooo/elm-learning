@@ -1,0 +1,723 @@
+var _user$project$Main$white = _debois$elm_mdl$Material_Color$text(_debois$elm_mdl$Material_Color$white);
+var _user$project$Main$subscriptions = function (model) {
+	return _elm_lang$core$Platform_Sub$none;
+};
+var _user$project$Main$toUser = F3(
+	function (t, s, m) {
+		return {id: t, name: s, status: m};
+	});
+var _user$project$Main$user = A4(
+	_elm_lang$core$Json_Decode$map3,
+	_user$project$Main$toUser,
+	A2(_elm_lang$core$Json_Decode$field, 'id', _elm_lang$core$Json_Decode$int),
+	A2(_elm_lang$core$Json_Decode$field, 'name', _elm_lang$core$Json_Decode$string),
+	A2(_elm_lang$core$Json_Decode$field, 'status', _elm_lang$core$Json_Decode$string));
+var _user$project$Main$url_users = 'http://localhost:3090/users';
+var _user$project$Main$requestUsers = A2(
+	_elm_lang$http$Http$get,
+	_user$project$Main$url_users,
+	_elm_lang$core$Json_Decode$list(_user$project$Main$user));
+var _user$project$Main$User = F3(
+	function (a, b, c) {
+		return {id: a, name: b, status: c};
+	});
+var _user$project$Main$Model = F4(
+	function (a, b, c, d) {
+		return {loading: a, page: b, users: c, mdl: d};
+	});
+var _user$project$Main$RouteMain = {ctor: 'RouteMain'};
+var _user$project$Main$RouteUserDetail = function (a) {
+	return {ctor: 'RouteUserDetail', _0: a};
+};
+var _user$project$Main$RouteUsers = {ctor: 'RouteUsers'};
+var _user$project$Main$RouteHome = {ctor: 'RouteHome'};
+var _user$project$Main$route = _evancz$url_parser$UrlParser$oneOf(
+	{
+		ctor: '::',
+		_0: A2(_evancz$url_parser$UrlParser$map, _user$project$Main$RouteHome, _evancz$url_parser$UrlParser$top),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_evancz$url_parser$UrlParser$map,
+				_user$project$Main$RouteUsers,
+				_evancz$url_parser$UrlParser$s('users')),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_evancz$url_parser$UrlParser$map,
+					_user$project$Main$RouteUserDetail,
+					A2(
+						_evancz$url_parser$UrlParser_ops['</>'],
+						_evancz$url_parser$UrlParser$s('users'),
+						_evancz$url_parser$UrlParser$int)),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_evancz$url_parser$UrlParser$map,
+						_user$project$Main$RouteMain,
+						_evancz$url_parser$UrlParser$s('Main.elm')),
+					_1: {ctor: '[]'}
+				}
+			}
+		}
+	});
+var _user$project$Main$init = function (location) {
+	return {
+		ctor: '_Tuple2',
+		_0: A4(
+			_user$project$Main$Model,
+			_elm_lang$core$Maybe$Nothing,
+			A2(_evancz$url_parser$UrlParser$parsePath, _user$project$Main$route, location),
+			{ctor: '[]'},
+			_debois$elm_mdl$Material$model),
+		_1: _elm_lang$core$Platform_Cmd$none
+	};
+};
+var _user$project$Main$Mdl = function (a) {
+	return {ctor: 'Mdl', _0: a};
+};
+var _user$project$Main$MsgNewUserDetail = function (a) {
+	return {ctor: 'MsgNewUserDetail', _0: a};
+};
+var _user$project$Main$getUserDetail = function (n) {
+	var url_post = A2(
+		_elm_lang$core$Basics_ops['++'],
+		_user$project$Main$url_users,
+		A2(
+			_elm_lang$core$Basics_ops['++'],
+			'/',
+			_elm_lang$core$Basics$toString(n)));
+	return A2(
+		_elm_lang$http$Http$send,
+		_user$project$Main$MsgNewUserDetail,
+		A2(_elm_lang$http$Http$get, url_post, _user$project$Main$user));
+};
+var _user$project$Main$MsgNewUsers = function (a) {
+	return {ctor: 'MsgNewUsers', _0: a};
+};
+var _user$project$Main$getUsers = A2(_elm_lang$http$Http$send, _user$project$Main$MsgNewUsers, _user$project$Main$requestUsers);
+var _user$project$Main$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+		switch (_p0.ctor) {
+			case 'MsgNewUrl':
+				return {
+					ctor: '_Tuple2',
+					_0: model,
+					_1: _elm_lang$navigation$Navigation$newUrl(_p0._0)
+				};
+			case 'MsgUrlChange':
+				var _p3 = _p0._0;
+				var newpage = A2(_evancz$url_parser$UrlParser$parsePath, _user$project$Main$route, _p3);
+				var _p1 = A2(_elm_lang$core$Debug$log, 'location=', _p3);
+				var _p2 = newpage;
+				if (_p2.ctor === 'Nothing') {
+					return {
+						ctor: '_Tuple2',
+						_0: _elm_lang$core$Native_Utils.update(
+							model,
+							{page: newpage}),
+						_1: _elm_lang$core$Platform_Cmd$none
+					};
+				} else {
+					switch (_p2._0.ctor) {
+						case 'RouteHome':
+							return {
+								ctor: '_Tuple2',
+								_0: _elm_lang$core$Native_Utils.update(
+									model,
+									{page: newpage}),
+								_1: _elm_lang$core$Platform_Cmd$none
+							};
+						case 'RouteUsers':
+							return {
+								ctor: '_Tuple2',
+								_0: _elm_lang$core$Native_Utils.update(
+									model,
+									{loading: newpage}),
+								_1: _user$project$Main$getUsers
+							};
+						case 'RouteUserDetail':
+							return {
+								ctor: '_Tuple2',
+								_0: _elm_lang$core$Native_Utils.update(
+									model,
+									{loading: newpage}),
+								_1: _user$project$Main$getUserDetail(_p2._0._0)
+							};
+						default:
+							return {
+								ctor: '_Tuple2',
+								_0: _elm_lang$core$Native_Utils.update(
+									model,
+									{loading: newpage}),
+								_1: _user$project$Main$getUsers
+							};
+					}
+				}
+			case 'MsgNewUsers':
+				if (_p0._0.ctor === 'Ok') {
+					return {
+						ctor: '_Tuple2',
+						_0: _elm_lang$core$Native_Utils.update(
+							model,
+							{page: model.loading, users: _p0._0._0}),
+						_1: _elm_lang$core$Platform_Cmd$none
+					};
+				} else {
+					return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+				}
+			case 'MsgNewUserDetail':
+				if (_p0._0.ctor === 'Ok') {
+					return {
+						ctor: '_Tuple2',
+						_0: _elm_lang$core$Native_Utils.update(
+							model,
+							{
+								page: model.loading,
+								users: {
+									ctor: '::',
+									_0: _p0._0._0,
+									_1: {ctor: '[]'}
+								}
+							}),
+						_1: _elm_lang$core$Platform_Cmd$none
+					};
+				} else {
+					return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+				}
+			default:
+				return A3(_debois$elm_mdl$Material$update, _user$project$Main$Mdl, _p0._0, model);
+		}
+	});
+var _user$project$Main$MsgUrlChange = function (a) {
+	return {ctor: 'MsgUrlChange', _0: a};
+};
+var _user$project$Main$MsgNewUrl = function (a) {
+	return {ctor: 'MsgNewUrl', _0: a};
+};
+var _user$project$Main$viewLink = F2(
+	function (model, url) {
+		return A2(
+			_elm_lang$html$Html$li,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$style(
+					{
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'display', _1: 'inline-block'},
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: A5(
+					_debois$elm_mdl$Material_Button$render,
+					_user$project$Main$Mdl,
+					{
+						ctor: '::',
+						_0: 0,
+						_1: {ctor: '[]'}
+					},
+					model.mdl,
+					{
+						ctor: '::',
+						_0: _debois$elm_mdl$Material_Button$raised,
+						_1: {
+							ctor: '::',
+							_0: _debois$elm_mdl$Material_Options$onClick(
+								_user$project$Main$MsgNewUrl(url)),
+							_1: {
+								ctor: '::',
+								_0: A2(_debois$elm_mdl$Material_Options$css, 'margin', '0 6px'),
+								_1: {ctor: '[]'}
+							}
+						}
+					},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text(url),
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			});
+	});
+var _user$project$Main$viewUsers = function (a) {
+	var url = A2(
+		_elm_lang$core$Basics_ops['++'],
+		'/users/',
+		_elm_lang$core$Basics$toString(a.id));
+	var _p4 = a.status;
+	switch (_p4) {
+		case 'red':
+			return A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$style(
+						{
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'padding', _1: '10px'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'margin', _1: '10px'},
+								_1: {ctor: '[]'}
+							}
+						}),
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_debois$elm_mdl$Material_Options$div,
+						{
+							ctor: '::',
+							_0: _debois$elm_mdl$Material_Elevation$e6,
+							_1: {
+								ctor: '::',
+								_0: A2(_debois$elm_mdl$Material_Options$css, 'width', '800px'),
+								_1: {
+									ctor: '::',
+									_0: _debois$elm_mdl$Material_Options$center,
+									_1: {ctor: '[]'}
+								}
+							}
+						},
+						{
+							ctor: '::',
+							_0: A2(
+								_debois$elm_mdl$Material_Card$view,
+								{
+									ctor: '::',
+									_0: A2(_debois$elm_mdl$Material_Options$css, 'width', '800px'),
+									_1: {
+										ctor: '::',
+										_0: _debois$elm_mdl$Material_Color$background(
+											A2(_debois$elm_mdl$Material_Color$color, _debois$elm_mdl$Material_Color$Red, _debois$elm_mdl$Material_Color$S500)),
+										_1: {
+											ctor: '::',
+											_0: _debois$elm_mdl$Material_Options$onClick(
+												_user$project$Main$MsgNewUrl(url)),
+											_1: {ctor: '[]'}
+										}
+									}
+								},
+								{
+									ctor: '::',
+									_0: A2(
+										_debois$elm_mdl$Material_Card$title,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: A2(
+												_debois$elm_mdl$Material_Card$head,
+												{
+													ctor: '::',
+													_0: _user$project$Main$white,
+													_1: {ctor: '[]'}
+												},
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html$text(
+														_elm_lang$core$Basics$toString(a.id)),
+													_1: {ctor: '[]'}
+												}),
+											_1: {ctor: '[]'}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_debois$elm_mdl$Material_Card$text,
+											{
+												ctor: '::',
+												_0: _user$project$Main$white,
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text(a.name),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				});
+		case 'yellow':
+			return A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$style(
+						{
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'padding', _1: '10px'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'margin', _1: '10px'},
+								_1: {ctor: '[]'}
+							}
+						}),
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_debois$elm_mdl$Material_Options$div,
+						{
+							ctor: '::',
+							_0: _debois$elm_mdl$Material_Elevation$e6,
+							_1: {
+								ctor: '::',
+								_0: A2(_debois$elm_mdl$Material_Options$css, 'width', '800px'),
+								_1: {
+									ctor: '::',
+									_0: _debois$elm_mdl$Material_Options$center,
+									_1: {ctor: '[]'}
+								}
+							}
+						},
+						{
+							ctor: '::',
+							_0: A2(
+								_debois$elm_mdl$Material_Card$view,
+								{
+									ctor: '::',
+									_0: A2(_debois$elm_mdl$Material_Options$css, 'width', '800px'),
+									_1: {
+										ctor: '::',
+										_0: _debois$elm_mdl$Material_Color$background(
+											A2(_debois$elm_mdl$Material_Color$color, _debois$elm_mdl$Material_Color$Yellow, _debois$elm_mdl$Material_Color$S500)),
+										_1: {
+											ctor: '::',
+											_0: _debois$elm_mdl$Material_Options$onClick(
+												_user$project$Main$MsgNewUrl(url)),
+											_1: {ctor: '[]'}
+										}
+									}
+								},
+								{
+									ctor: '::',
+									_0: A2(
+										_debois$elm_mdl$Material_Card$title,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: A2(
+												_debois$elm_mdl$Material_Card$head,
+												{
+													ctor: '::',
+													_0: _user$project$Main$white,
+													_1: {ctor: '[]'}
+												},
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html$text(
+														_elm_lang$core$Basics$toString(a.id)),
+													_1: {ctor: '[]'}
+												}),
+											_1: {ctor: '[]'}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_debois$elm_mdl$Material_Card$text,
+											{
+												ctor: '::',
+												_0: _user$project$Main$white,
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text(a.name),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				});
+		default:
+			return A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$style(
+						{
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'padding', _1: '10px'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'margin', _1: '10px'},
+								_1: {ctor: '[]'}
+							}
+						}),
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_debois$elm_mdl$Material_Options$div,
+						{
+							ctor: '::',
+							_0: _debois$elm_mdl$Material_Elevation$e6,
+							_1: {
+								ctor: '::',
+								_0: A2(_debois$elm_mdl$Material_Options$css, 'width', '800px'),
+								_1: {
+									ctor: '::',
+									_0: _debois$elm_mdl$Material_Options$center,
+									_1: {ctor: '[]'}
+								}
+							}
+						},
+						{
+							ctor: '::',
+							_0: A2(
+								_debois$elm_mdl$Material_Card$view,
+								{
+									ctor: '::',
+									_0: A2(_debois$elm_mdl$Material_Options$css, 'width', '800px'),
+									_1: {
+										ctor: '::',
+										_0: _debois$elm_mdl$Material_Color$background(
+											A2(_debois$elm_mdl$Material_Color$color, _debois$elm_mdl$Material_Color$Green, _debois$elm_mdl$Material_Color$S500)),
+										_1: {
+											ctor: '::',
+											_0: _debois$elm_mdl$Material_Options$onClick(
+												_user$project$Main$MsgNewUrl(url)),
+											_1: {ctor: '[]'}
+										}
+									}
+								},
+								{
+									ctor: '::',
+									_0: A2(
+										_debois$elm_mdl$Material_Card$title,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: A2(
+												_debois$elm_mdl$Material_Card$head,
+												{
+													ctor: '::',
+													_0: _user$project$Main$white,
+													_1: {ctor: '[]'}
+												},
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html$text(
+														_elm_lang$core$Basics$toString(a.id)),
+													_1: {ctor: '[]'}
+												}),
+											_1: {ctor: '[]'}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_debois$elm_mdl$Material_Card$text,
+											{
+												ctor: '::',
+												_0: _user$project$Main$white,
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text(a.name),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				});
+	}
+};
+var _user$project$Main$viewPage = F2(
+	function (route, model) {
+		var _p5 = route;
+		switch (_p5.ctor) {
+			case 'RouteHome':
+				return A2(
+					_elm_lang$html$Html$div,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$h2,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('Welcomw to My Page!'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$p,
+								{ctor: '[]'},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('これはテストページのトップです'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
+					});
+			case 'RouteUsers':
+				return A2(
+					_elm_lang$html$Html$div,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$h2,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('ユーザー一覧'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$ul,
+								{ctor: '[]'},
+								A2(_elm_lang$core$List$map, _user$project$Main$viewUsers, model.users)),
+							_1: {ctor: '[]'}
+						}
+					});
+			case 'RouteUserDetail':
+				return A2(
+					_elm_lang$html$Html$div,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$h2,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('ブログ記事表示'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$ul,
+								{ctor: '[]'},
+								A2(_elm_lang$core$List$map, _user$project$Main$viewUsers, model.users)),
+							_1: {ctor: '[]'}
+						}
+					});
+			default:
+				return A2(
+					_elm_lang$html$Html$div,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$h2,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('ユーザー一覧'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$ul,
+								{ctor: '[]'},
+								A2(_elm_lang$core$List$map, _user$project$Main$viewUsers, model.users)),
+							_1: {ctor: '[]'}
+						}
+					});
+		}
+	});
+var _user$project$Main$viewRoute = function (model) {
+	var _p6 = A2(_elm_lang$core$Debug$log, 'maybeRoute=', model.page);
+	var _p7 = model.page;
+	if (_p7.ctor === 'Nothing') {
+		return A2(
+			_elm_lang$html$Html$h2,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('404 Page Not Found!'),
+				_1: {ctor: '[]'}
+			});
+	} else {
+		return A2(_user$project$Main$viewPage, _p7._0, model);
+	}
+};
+var _user$project$Main$view = function (model) {
+	return _debois$elm_mdl$Material_Scheme$top(
+		A2(
+			_elm_lang$html$Html$div,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$h1,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text('Life Support User Manager'),
+						_1: {ctor: '[]'}
+					}),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$ul,
+						{ctor: '[]'},
+						A2(
+							_elm_lang$core$List$map,
+							_user$project$Main$viewLink(model),
+							{
+								ctor: '::',
+								_0: '/',
+								_1: {
+									ctor: '::',
+									_0: '/users/',
+									_1: {
+										ctor: '::',
+										_0: '/users/1/',
+										_1: {
+											ctor: '::',
+											_0: '/users/2/',
+											_1: {
+												ctor: '::',
+												_0: '/users/3/',
+												_1: {ctor: '[]'}
+											}
+										}
+									}
+								}
+							})),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$div,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _user$project$Main$viewRoute(model),
+								_1: {ctor: '[]'}
+							}),
+						_1: {ctor: '[]'}
+					}
+				}
+			}));
+};
+var _user$project$Main$main = A2(
+	_elm_lang$navigation$Navigation$program,
+	_user$project$Main$MsgUrlChange,
+	{init: _user$project$Main$init, view: _user$project$Main$view, update: _user$project$Main$update, subscriptions: _user$project$Main$subscriptions})();

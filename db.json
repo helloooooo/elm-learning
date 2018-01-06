@@ -1,0 +1,7 @@
+{
+    "users":[
+        {"id":1,"name":"あこ","status":"red"},
+        {"id":2,"name":"はざら","status":"yellow"},
+        {"id":3,"name":"ひな虫","status":"green"}
+    ]
+}
