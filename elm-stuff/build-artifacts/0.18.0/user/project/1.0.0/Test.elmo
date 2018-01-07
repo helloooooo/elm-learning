@@ -1,0 +1,34 @@
+var _user$project$Test$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+	A2(
+		_terezka$elm_plot$Plot$viewSeries,
+		{
+			ctor: '::',
+			_0: _terezka$elm_plot$Plot$line(
+				_elm_lang$core$List$map(
+					function (_p0) {
+						var _p1 = _p0;
+						return A2(_terezka$elm_plot$Plot$circle, _p1.x, _p1.y);
+					})),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: {x: 0, y: 1},
+			_1: {
+				ctor: '::',
+				_0: {x: 2, y: 2},
+				_1: {
+					ctor: '::',
+					_0: {x: 3, y: 3},
+					_1: {
+						ctor: '::',
+						_0: {x: 4, y: 5},
+						_1: {
+							ctor: '::',
+							_0: {x: 5, y: 8},
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		}));

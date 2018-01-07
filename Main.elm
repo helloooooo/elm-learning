@@ -19,6 +19,13 @@ import Material.Elevation as Elevation
 import Material.Layout as Layout
 import Material.List as Lists
 
+
+import Svg exposing (Svg)
+import Svg.Attributes exposing (..)
+import Plot exposing (..)
+
+
+
 main =
   Navigation.program MsgUrlChange
     { init = init
@@ -30,14 +37,26 @@ main =
 
 init : Navigation.Location -> ( Model, Cmd Msg )
 init location =  -- ***MDL-2: Boilerplate: Always use this initial Mdl model store.
-  ( Model Nothing (Url.parsePath route location) [] Material.model
+  ( Model Nothing (Url.parsePath route location) [] initData initData Material.model
   , Cmd.none
   )
 
+initData = [Data 2 2,Data 2 2,Data 2 2,Data 2 2,Data 2 2]
 
 -- MODEL
+
+type alias Data = {
+   x : Float,
+   y :Float
+}
+type alias ApiData = {
+  id :Int
+  ,human : Float
+  ,temparture :Float
+  ,userId : Int
+}
 type alias User = {
-     id: Int
+     id : Int
     ,name : String  
     ,status : String  
     }
@@ -45,6 +64,8 @@ type alias Model =
   { loading : Maybe Route
   , page : Maybe Route
   , users : List User
+  , humandatas : List Data
+  , tempdatas : List Data
   , mdl : Material.Model -- ***MDL-3 : Boilerplate: model store for any and all Mdl components you use.
   }
 
@@ -76,6 +97,8 @@ type Msg
   | MsgUrlChange Navigation.Location
   | MsgNewUsers (Result Http.Error (List User))
   | MsgNewUserDetail (Result Http.Error User)
+  | MsgNewApiData (Result Http.Error (List ApiData))
+  | MsgUnti (Maybe User)
   | Mdl (Material.Msg Msg) -- ***MDL-4 : Boilerplate: Msg clause for internal Mdl messages.
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -109,10 +132,23 @@ update msg model =
       (model, Cmd.none)
 
     MsgNewUserDetail (Ok newuser) ->
-      ( { model | page=model.loading, users=[newuser] } , Cmd.none)
+      ( { model | page=model.loading, users=[newuser],humandatas = [] ,tempdatas = [Data 1 30,Data 2 30,Data 3 30,Data 4 30,Data 5 30]} , Cmd.none)
 
     MsgNewUserDetail (Err _) ->
       (model, Cmd.none)
+      
+    MsgNewApiData (Ok newdata) ->
+      ( { model | page=model.loading, humandatas = ( createHumanData (List.head newdata) model.humandatas ),tempdatas =(createTempData (List.head newdata)  model.tempdatas)} , Cmd.none)
+
+    MsgUnti user ->
+      ( { model | loading = model.loading }, getApiData (createGetApiCommand user))
+
+    -- MsgUnti (Err _ ) ->
+    --   (model, Cmd.none)    
+
+    MsgNewApiData (Err _) ->
+      (model, Cmd.none)    
+
 
     -- ***MDL-5 : Boilerplate: Mdl action handler.
     Mdl msg_ ->
@@ -123,7 +159,43 @@ update msg model =
 url_users =
     "http://localhost:3090/users"
 
+url_datas = 
+  "http://localhost:3090/datas?userId="
 
+createTempData: Maybe ApiData -> List Data ->List Data  
+createTempData newdata datas =
+  case newdata of 
+    Just data ->
+      if List.length datas < 5 then
+        [ Data ((List.reverse datas |> List.head |> unwrapDatax) + 1.0) data.temparture ]
+        |> List.append datas 
+      else 
+        [ Data ((List.reverse datas |> List.head |> unwrapDatax) + 1.0) data.temparture ]
+        |> List.append datas 
+        |> List.drop 1
+    Nothing ->
+      [Data 1 1]
+
+createHumanData: Maybe ApiData -> List Data ->List Data  
+createHumanData newdata datas =
+  case newdata of 
+    Just data ->
+      if List.length datas < 5 then
+        [ Data ((List.reverse datas |> List.head |> unwrapDatax) + 1.0 ) data.human ]
+        |> List.append datas 
+      else 
+        [ Data ((List.reverse datas |> List.head |> unwrapDatax) + 1.0 ) data.human ]
+        |> List.append datas 
+        |> List.drop 1
+
+    Nothing -> 
+      []
+
+unwrapDatax: Maybe Data -> Float
+unwrapDatax mdata = 
+  case mdata of 
+    Just data -> data.x
+    Nothing -> 0
 
 requestUsers : Http.Request (List User)
 requestUsers =
@@ -133,6 +205,14 @@ requestUsers =
 user : Decode.Decoder User
 user =
     Decode.map3 toUser (Decode.field "id" Decode.int) (Decode.field "name" Decode.string) (Decode.field "status" Decode.string)
+
+apidata : Decode.Decoder ApiData
+apidata = 
+  Decode.map4 toApiData (Decode.field "id" Decode.int) (Decode.field "human" Decode.float) (Decode.field "temparture" Decode.float) (Decode.field "userId" Decode.int)
+
+toApiData : Int -> Float -> Float -> Int -> ApiData
+toApiData i h t ui =
+  {id = i , human = h, temparture = t, userId = ui}
 
 toUser : Int -> String -> String-> User  
 toUser t s m =
@@ -152,13 +232,34 @@ getUserDetail n =
     in
     Http.send MsgNewUserDetail ( Http.get url_post user )
 
+requestApiData : Int -> Http.Request (List ApiData)
+requestApiData id = 
+  let 
+    url_post =  url_datas ++ (toString id) ++ "&_sort=id&_order=desc&_limit=1"
+  in
+  Http.get url_post ( Decode.list apidata )
+
+getApiData : Int ->  Cmd Msg
+getApiData id =
+  Http.send MsgNewApiData (requestApiData id)
+
+createGetApiCommand : Maybe User -> Int
+createGetApiCommand user =
+  case user of 
+    Just data ->
+      data.id
+    Nothing ->
+      1
 
 
 -- SUBSCRIPTIONS
 subscriptions : Model -> Sub Msg
 subscriptions model =
-  Sub.none
+      Time.every Time.second (\_ -> MsgUnti (List.head model.users))
 
+-- addData :Data -> Msg
+-- addData data = 
+--   Increase data
 
 type alias Mdl = -- ***MDL-6
     Material.Model
@@ -167,25 +268,18 @@ type alias Mdl = -- ***MDL-6
 -- VIEW
 view : Model -> Html Msg
 view model =
-  Layout.render Mdl model.mdl
-    [ Layout.fixedHeader
+
+  div []
+    [ h1 [] [ text "Life Support User Manager" ]
+    , ul [] (List.map (viewLink model) [ "/","/users/","/users/1/", "/users/2/", "/users/3/" ])
+    , div [] [ viewRoute model ]
     ]
-    { header = [Layout.title[] [text "Life Support Manager"]]
-    , drawer = []
-    , tabs = ([viewLink model "/users/"])
-    , main = [ viewRoute model ]
-    }
-  -- div []
-  --   [ h1 [] [ text "Life Support User Manager" ]
-  --   , ul [] (List.map (viewLink model) [ "/","/users/","/users/1/", "/users/2/", "/users/3/" ])
-  --   , div [] [ viewRoute model ]
-  --   ]
-  --   |> Material.Scheme.top -- ***MDL-7
+    |> Material.Scheme.top -- ***MDL-7
 
 viewLink : Model -> String -> Html Msg   -- ***MDL-8
 viewLink model url =
   -- li [] [ button [ onClick (MsgNewUrl url) ] [ text url ] ]
-  li [ style [ ("display", "inline-block") ] ] [ 
+  li [ Html.Attributes.style [ ("display", "inline-block") ] ] [ 
           Button.render Mdl
             [ 0 ]
             model.mdl
@@ -227,13 +321,15 @@ viewPage route model =
     RouteUserDetail id ->
       div []
         [ h2 [] [text "ブログ記事表示"]
-        , ul [] (List.map viewUsers model.users)
+        , ul [] (List.map viewUsers model.users )
+        , h2 [] [text (toString  model.tempdatas)]
+        ,viewgraph  model.tempdatas
         ]
 
     RouteMain ->
       div []
         [ h2 [] [text "ユーザー一覧"]
-        , ul [] (List.map viewUsers model.users)
+        , ul [] (List.map viewUsers model.users )
         ]
 
 
@@ -241,14 +337,29 @@ white : Options.Property c m
 white = 
   Color.text Color.white 
 
-viewUsers a =
+
+-- increaseButton : List Data -> Html Msg
+-- increaseButton data =
+--     div []
+--         [ button [ onClick (Increase (Data (List.length data + 1 |> toFloat ) 1 )) ] [ text "Add Data" ]
+--         ]
+
+
+viewgraph : List Data -> Html msg
+viewgraph datas = 
+        viewSeries
+        [ line (List.map (\{ x, y } -> circle x y)) ]
+          datas
+        
+  
+viewUsers a = 
   let 
     url = "/users/"++ toString a.id
   in
   case a.status of 
   "red" -> 
 
-  div [ style [("padding","10px"), ("margin","10px")] ]
+  div [ Html.Attributes.style [("padding","10px"), ("margin","10px")] ]
     [
       Options.div
         [ Elevation.e6
@@ -265,10 +376,15 @@ viewUsers a =
             , Card.text [ white ] [ text <| a.name ]
             ]
         ]
+        -- ,viewSeries
+        -- [ line (List.map (\{ x, y } -> circle x y)) ]
+        -- d
     ]
+
+
   "yellow" ->
 
-    div [ style [("padding","10px"), ("margin","10px")] ]
+    div [  Html.Attributes.style [("padding","10px"), ("margin","10px")] ]
     [
       Options.div
         [ Elevation.e6
@@ -288,7 +404,7 @@ viewUsers a =
     ]
 
   _ -> 
-    div [ style [("padding","10px"), ("margin","10px")] ]
+    div [ Html.Attributes.style [("padding","10px"), ("margin","10px")] ]
     [
       Options.div
         [ Elevation.e6
