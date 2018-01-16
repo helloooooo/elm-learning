@@ -1,4 +1,6 @@
-# elm-learning
+# elm-realtime-graph
+
+It gets data by get request from the API in a sensation of 1 second and reflects it on the graph
 
 ## Demo
 
