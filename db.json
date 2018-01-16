@@ -2,17 +2,32 @@
   "users": [
     {
       "id": 1,
-      "name": "あこ",
+      "name": "Test User 1",
       "status": "red"
     },
     {
       "id": 2,
-      "name": "はざら",
+      "name": "Test User 2",
       "status": "yellow"
     },
     {
       "id": 3,
-      "name": "ひな虫",
+      "name": "Test User 3",
+      "status": "green"
+    },
+    {
+      "id": 4,
+      "name": "Test User 4",
+      "status": "green"
+    },
+    {
+      "id": 5,
+      "name": "Test User 5",
+      "status": "green"
+    },
+    {
+      "id": 6,
+      "name": "Test User 6",
       "status": "green"
     }
   ],
@@ -208,6 +223,5890 @@
       "human": 1,
       "temparture": 30.1,
       "userId": 1
+    },
+    {
+      "{\"id\":33,\"human\":1,\"temparture\":39.9,\"userId\":1}": "",
+      "id": 34
+    },
+    {
+      "human": 1,
+      "temparture": 39.9,
+      "userId": 1,
+      "id": 35
+    },
+    {
+      "human": 1,
+      "temparture": 39.9,
+      "userId": 1,
+      "id": 36
+    },
+    {
+      "'{\"human\":1,\"temparture\":,\"userId\":1}'": "",
+      "id": 37
+    },
+    {
+      "'{\"human\":1,\"temparture\":,\"userId\":1}'": "",
+      "id": 38
+    },
+    {
+      "'{\"human\":1,\"temparture\":,\"userId\":1}'": "",
+      "id": 39
+    },
+    {
+      "\"{\"human\":1,\"temparture\":": "",
+      "id": 40
+    },
+    {
+      "'{\"human\":1,\"temparture\":'": "",
+      "id": 41
+    },
+    {
+      "'{\"human\":1,\"temparture\":'": "",
+      "id": 42
+    },
+    {
+      "userId": 1,
+      "human": 1,
+      "temparture": 36.79614771147891,
+      "id": 43
+    },
+    {
+      "userId": 1,
+      "temparture": 39.555684617771036,
+      "human": 1,
+      "id": 44
+    },
+    {
+      "temparture": 32.553347575474184,
+      "userId": 1,
+      "human": 1,
+      "id": 45
+    },
+    {
+      "temparture": 37.948483616482214,
+      "userId": 1,
+      "human": 1,
+      "id": 46
+    },
+    {
+      "temparture": 38.241068792896606,
+      "userId": 1,
+      "human": 1,
+      "id": 47
+    },
+    {
+      "temparture": 36.563460546775474,
+      "userId": 1,
+      "human": 1,
+      "id": 48
+    },
+    {
+      "temparture": 30.970889161673394,
+      "userId": 1,
+      "human": 1,
+      "id": 49
+    },
+    {
+      "temparture": 30.396740358485896,
+      "userId": 1,
+      "human": 1,
+      "id": 50
+    },
+    {
+      "temparture": 36.550129527349334,
+      "userId": 1,
+      "human": 1,
+      "id": 51
+    },
+    {
+      "temparture": 31.034721823892433,
+      "userId": 1,
+      "human": 1,
+      "id": 52
+    },
+    {
+      "temparture": 33.1915070541888,
+      "userId": 1,
+      "human": 1,
+      "id": 53
+    },
+    {
+      "temparture": 37.502378685452946,
+      "userId": 1,
+      "human": 1,
+      "id": 54
+    },
+    {
+      "temparture": 33.93178810427086,
+      "userId": 1,
+      "human": 1,
+      "id": 55
+    },
+    {
+      "temparture": 36.33156738284052,
+      "userId": 1,
+      "human": 1,
+      "id": 56
+    },
+    {
+      "temparture": 32.82358551753392,
+      "userId": 1,
+      "human": 1,
+      "id": 57
+    },
+    {
+      "temparture": 36.86145380600652,
+      "userId": 1,
+      "human": 1,
+      "id": 58
+    },
+    {
+      "temparture": 34.526220137397694,
+      "userId": 1,
+      "human": 1,
+      "id": 59
+    },
+    {
+      "temparture": 35.223362020504794,
+      "userId": 1,
+      "human": 1,
+      "id": 60
+    },
+    {
+      "temparture": 39.362623033545674,
+      "userId": 1,
+      "human": 1,
+      "id": 61
+    },
+    {
+      "temparture": 34.57699897705358,
+      "userId": 1,
+      "human": 1,
+      "id": 62
+    },
+    {
+      "temparture": 36.056485106839716,
+      "userId": 1,
+      "human": 1,
+      "id": 63
+    },
+    {
+      "temparture": 31.072977173185127,
+      "userId": 1,
+      "human": 1,
+      "id": 64
+    },
+    {
+      "temparture": 39.12596958978218,
+      "userId": 1,
+      "human": 1,
+      "id": 65
+    },
+    {
+      "temparture": 31.86368498508144,
+      "userId": 1,
+      "human": 1,
+      "id": 66
+    },
+    {
+      "temparture": 35.70398928844903,
+      "userId": 1,
+      "human": 1,
+      "id": 67
+    },
+    {
+      "temparture": 38.71728476046077,
+      "userId": 1,
+      "human": 1,
+      "id": 68
+    },
+    {
+      "temparture": 34.87219754370046,
+      "userId": 1,
+      "human": 1,
+      "id": 69
+    },
+    {
+      "temparture": 37.220860500313044,
+      "userId": 1,
+      "human": 1,
+      "id": 70
+    },
+    {
+      "temparture": 30.540833769726806,
+      "userId": 1,
+      "human": 1,
+      "id": 71
+    },
+    {
+      "temparture": 39.33475319380645,
+      "userId": 1,
+      "human": 1,
+      "id": 72
+    },
+    {
+      "temparture": 31.77126599906441,
+      "userId": 1,
+      "human": 1,
+      "id": 73
+    },
+    {
+      "temparture": 38.17948338647506,
+      "userId": 1,
+      "human": 1,
+      "id": 74
+    },
+    {
+      "temparture": 37.938397070884264,
+      "userId": 1,
+      "human": 1,
+      "id": 75
+    },
+    {
+      "temparture": 38.37840633239756,
+      "userId": 1,
+      "human": 1,
+      "id": 76
+    },
+    {
+      "temparture": 34.08190870966729,
+      "userId": 1,
+      "human": 1,
+      "id": 77
+    },
+    {
+      "temparture": 32.10622810375885,
+      "userId": 1,
+      "human": 1,
+      "id": 78
+    },
+    {
+      "temparture": 34.416415848070585,
+      "userId": 1,
+      "human": 1,
+      "id": 79
+    },
+    {
+      "temparture": 38.73440962261974,
+      "userId": 1,
+      "human": 1,
+      "id": 80
+    },
+    {
+      "temparture": 36.86523313475584,
+      "userId": 1,
+      "human": 1,
+      "id": 81
+    },
+    {
+      "temparture": 35.9921943898826,
+      "userId": 1,
+      "human": 1,
+      "id": 82
+    },
+    {
+      "temparture": 39.11806701369828,
+      "userId": 1,
+      "human": 1,
+      "id": 83
+    },
+    {
+      "temparture": 36.9052284306963,
+      "userId": 1,
+      "human": 1,
+      "id": 84
+    },
+    {
+      "temparture": 34.989485540862226,
+      "userId": 1,
+      "human": 1,
+      "id": 85
+    },
+    {
+      "temparture": 32.470115686311,
+      "userId": 1,
+      "human": 1,
+      "id": 86
+    },
+    {
+      "temparture": 36.844761371556665,
+      "userId": 1,
+      "human": 1,
+      "id": 87
+    },
+    {
+      "temparture": 36.68137903011935,
+      "userId": 1,
+      "human": 1,
+      "id": 88
+    },
+    {
+      "temparture": 35.73530109751414,
+      "userId": 1,
+      "human": 1,
+      "id": 89
+    },
+    {
+      "temparture": 33.31627840688332,
+      "userId": 1,
+      "human": 1,
+      "id": 90
+    },
+    {
+      "temparture": 38.96984299471898,
+      "userId": 1,
+      "human": 1,
+      "id": 91
+    },
+    {
+      "temparture": 31.27604941314639,
+      "userId": 1,
+      "human": 1,
+      "id": 92
+    },
+    {
+      "temparture": 32.009970167973584,
+      "userId": 1,
+      "human": 1,
+      "id": 93
+    },
+    {
+      "temparture": 33.90655609698688,
+      "userId": 1,
+      "human": 1,
+      "id": 94
+    },
+    {
+      "temparture": 33.97291624078035,
+      "userId": 1,
+      "human": 1,
+      "id": 95
+    },
+    {
+      "temparture": 37.416128094480015,
+      "userId": 1,
+      "human": 1,
+      "id": 96
+    },
+    {
+      "temparture": 37.28564523847569,
+      "userId": 1,
+      "human": 1,
+      "id": 97
+    },
+    {
+      "temparture": 34.173770961010575,
+      "userId": 1,
+      "human": 1,
+      "id": 98
+    },
+    {
+      "temparture": 36.892930662066085,
+      "userId": 1,
+      "human": 1,
+      "id": 99
+    },
+    {
+      "temparture": 38.751204519230384,
+      "userId": 1,
+      "human": 1,
+      "id": 100
+    },
+    {
+      "temparture": 32.317600386549486,
+      "userId": 1,
+      "human": 1,
+      "id": 101
+    },
+    {
+      "temparture": 37.44183659156835,
+      "userId": 1,
+      "human": 1,
+      "id": 102
+    },
+    {
+      "temparture": 32.782946700497206,
+      "userId": 1,
+      "human": 1,
+      "id": 103
+    },
+    {
+      "temparture": 38.06221569044765,
+      "userId": 1,
+      "human": 1,
+      "id": 104
+    },
+    {
+      "temparture": 30.149421535722837,
+      "userId": 1,
+      "human": 1,
+      "id": 105
+    },
+    {
+      "temparture": 37.031551522891725,
+      "userId": 1,
+      "human": 1,
+      "id": 106
+    },
+    {
+      "temparture": 32.91110444100071,
+      "userId": 1,
+      "human": 1,
+      "id": 107
+    },
+    {
+      "temparture": 35.458033811344066,
+      "userId": 1,
+      "human": 1,
+      "id": 108
+    },
+    {
+      "temparture": 38.2567011286268,
+      "userId": 1,
+      "human": 1,
+      "id": 109
+    },
+    {
+      "temparture": 30.58793162193987,
+      "userId": 1,
+      "human": 1,
+      "id": 110
+    },
+    {
+      "temparture": 33.266640858096125,
+      "userId": 1,
+      "human": 1,
+      "id": 111
+    },
+    {
+      "temparture": 37.59960299465067,
+      "userId": 1,
+      "human": 1,
+      "id": 112
+    },
+    {
+      "temparture": 33.80137445111436,
+      "userId": 1,
+      "human": 1,
+      "id": 113
+    },
+    {
+      "temparture": 37.5609343091,
+      "userId": 1,
+      "human": 1,
+      "id": 114
+    },
+    {
+      "temparture": 34.52394014301683,
+      "userId": 1,
+      "human": 1,
+      "id": 115
+    },
+    {
+      "temparture": 35.730204016259826,
+      "userId": 1,
+      "human": 1,
+      "id": 116
+    },
+    {
+      "temparture": 39.714887601520374,
+      "userId": 1,
+      "human": 1,
+      "id": 117
+    },
+    {
+      "temparture": 36.00197376422035,
+      "userId": 1,
+      "human": 1,
+      "id": 118
+    },
+    {
+      "temparture": 30.967647363235784,
+      "userId": 1,
+      "human": 1,
+      "id": 119
+    },
+    {
+      "temparture": 30.34840076546592,
+      "userId": 1,
+      "human": 1,
+      "id": 120
+    },
+    {
+      "temparture": 38.037892363730585,
+      "userId": 1,
+      "human": 1,
+      "id": 121
+    },
+    {
+      "temparture": 30.388372238562894,
+      "userId": 1,
+      "human": 1,
+      "id": 122
+    },
+    {
+      "temparture": 32.27852693544111,
+      "userId": 1,
+      "human": 1,
+      "id": 123
+    },
+    {
+      "temparture": 33.56367437398886,
+      "userId": 1,
+      "human": 1,
+      "id": 124
+    },
+    {
+      "temparture": 39.15420689416791,
+      "userId": 1,
+      "human": 1,
+      "id": 125
+    },
+    {
+      "temparture": 38.001104080536805,
+      "userId": 1,
+      "human": 1,
+      "id": 126
+    },
+    {
+      "temparture": 31.516340497596154,
+      "userId": 1,
+      "human": 1,
+      "id": 127
+    },
+    {
+      "temparture": 34.97079204065332,
+      "userId": 1,
+      "human": 1,
+      "id": 128
+    },
+    {
+      "temparture": 39.94879641378376,
+      "userId": 1,
+      "human": 1,
+      "id": 129
+    },
+    {
+      "temparture": 34.80139638798677,
+      "userId": 1,
+      "human": 1,
+      "id": 130
+    },
+    {
+      "temparture": 37.0256578036649,
+      "userId": 1,
+      "human": 1,
+      "id": 131
+    },
+    {
+      "temparture": 34.99676134168113,
+      "userId": 1,
+      "human": 1,
+      "id": 132
+    },
+    {
+      "temparture": 36.432566759806406,
+      "userId": 1,
+      "human": 1,
+      "id": 133
+    },
+    {
+      "temparture": 37.350553120349204,
+      "userId": 1,
+      "human": 1,
+      "id": 134
+    },
+    {
+      "temparture": 33.66221937534181,
+      "userId": 1,
+      "human": 1,
+      "id": 135
+    },
+    {
+      "temparture": 34.122862155360195,
+      "userId": 1,
+      "human": 1,
+      "id": 136
+    },
+    {
+      "temparture": 38.34034925491197,
+      "userId": 1,
+      "human": 1,
+      "id": 137
+    },
+    {
+      "temparture": 32.61729721763305,
+      "userId": 1,
+      "human": 1,
+      "id": 138
+    },
+    {
+      "temparture": 37.023578524951674,
+      "userId": 1,
+      "human": 1,
+      "id": 139
+    },
+    {
+      "temparture": 34.61710868893754,
+      "userId": 1,
+      "human": 1,
+      "id": 140
+    },
+    {
+      "temparture": 36.80911064346806,
+      "userId": 1,
+      "human": 1,
+      "id": 141
+    },
+    {
+      "temparture": 31.32600123217602,
+      "userId": 1,
+      "human": 1,
+      "id": 142
+    },
+    {
+      "temparture": 31.50347867161219,
+      "userId": 1,
+      "human": 1,
+      "id": 143
+    },
+    {
+      "temparture": 31.584674962845735,
+      "userId": 1,
+      "human": 1,
+      "id": 144
+    },
+    {
+      "human": 1,
+      "temparture": 38.60744049522051,
+      "userId": 1,
+      "id": 145
+    },
+    {
+      "human": 1,
+      "temparture": 33.791579330234356,
+      "userId": 1,
+      "id": 146
+    },
+    {
+      "human": 1,
+      "temparture": 39.87340714500347,
+      "userId": 1,
+      "id": 147
+    },
+    {
+      "human": 1,
+      "temparture": 38.93342732589478,
+      "userId": 1,
+      "id": 148
+    },
+    {
+      "human": 1,
+      "temparture": 31.018015002688365,
+      "userId": 1,
+      "id": 149
+    },
+    {
+      "human": 1,
+      "temparture": 38.44383372473672,
+      "userId": 1,
+      "id": 150
+    },
+    {
+      "human": 1,
+      "temparture": 36.00640053146546,
+      "userId": 1,
+      "id": 151
+    },
+    {
+      "human": 1,
+      "temparture": 33.33385591257186,
+      "userId": 1,
+      "id": 152
+    },
+    {
+      "human": 1,
+      "temparture": 34.02529479617413,
+      "userId": 1,
+      "id": 153
+    },
+    {
+      "human": 1,
+      "temparture": 34.373122514080706,
+      "userId": 1,
+      "id": 154
+    },
+    {
+      "human": 1,
+      "temparture": 38.96165473531737,
+      "userId": 1,
+      "id": 155
+    },
+    {
+      "human": 1,
+      "temparture": 32.87825782973995,
+      "userId": 1,
+      "id": 156
+    },
+    {
+      "human": 1,
+      "temparture": 32.051220737028935,
+      "userId": 1,
+      "id": 157
+    },
+    {
+      "human": 1,
+      "temparture": 34.12428453510011,
+      "userId": 1,
+      "id": 158
+    },
+    {
+      "human": 1,
+      "temparture": 34.00699062235698,
+      "userId": 1,
+      "id": 159
+    },
+    {
+      "human": 1,
+      "temparture": 36.05732704160243,
+      "userId": 1,
+      "id": 160
+    },
+    {
+      "human": 1,
+      "temparture": 35.60340917703783,
+      "userId": 1,
+      "id": 161
+    },
+    {
+      "human": 1,
+      "temparture": 34.28798115811992,
+      "userId": 1,
+      "id": 162
+    },
+    {
+      "human": 1,
+      "temparture": 36.85585433261543,
+      "userId": 1,
+      "id": 163
+    },
+    {
+      "human": 1,
+      "temparture": 33.92222735298963,
+      "userId": 1,
+      "id": 164
+    },
+    {
+      "human": 1,
+      "temparture": 36.97172363337616,
+      "userId": 1,
+      "id": 165
+    },
+    {
+      "human": 1,
+      "temparture": 30.4893684144389,
+      "userId": 1,
+      "id": 166
+    },
+    {
+      "human": 1,
+      "temparture": 39.699226990243545,
+      "userId": 1,
+      "id": 167
+    },
+    {
+      "human": 1,
+      "temparture": 30.10944354070378,
+      "userId": 1,
+      "id": 168
+    },
+    {
+      "human": 1,
+      "temparture": 31.60230910436677,
+      "userId": 1,
+      "id": 169
+    },
+    {
+      "human": 1,
+      "temparture": 39.66137993932175,
+      "userId": 1,
+      "id": 170
+    },
+    {
+      "human": 1,
+      "temparture": 39.20685776826371,
+      "userId": 1,
+      "id": 171
+    },
+    {
+      "human": 1,
+      "temparture": 35.737666754238184,
+      "userId": 1,
+      "id": 172
+    },
+    {
+      "human": 1,
+      "temparture": 30.849846365207533,
+      "userId": 1,
+      "id": 173
+    },
+    {
+      "human": 1,
+      "temparture": 36.47574813348043,
+      "userId": 1,
+      "id": 174
+    },
+    {
+      "human": 1,
+      "temparture": 35.232798356933415,
+      "userId": 1,
+      "id": 175
+    },
+    {
+      "human": 1,
+      "temparture": 33.80497303729421,
+      "userId": 1,
+      "id": 176
+    },
+    {
+      "human": 1,
+      "temparture": 33.11111543029421,
+      "userId": 1,
+      "id": 177
+    },
+    {
+      "human": 1,
+      "temparture": 32.0183778419869,
+      "userId": 1,
+      "id": 178
+    },
+    {
+      "human": 1,
+      "temparture": 31.343012468654308,
+      "userId": 1,
+      "id": 179
+    },
+    {
+      "human": 1,
+      "temparture": 39.611773014820784,
+      "userId": 1,
+      "id": 180
+    },
+    {
+      "human": 1,
+      "temparture": 35.0748913264471,
+      "userId": 1,
+      "id": 181
+    },
+    {
+      "human": 1,
+      "temparture": 30.35964275762782,
+      "userId": 1,
+      "id": 182
+    },
+    {
+      "human": 1,
+      "temparture": 35.559290122148504,
+      "userId": 1,
+      "id": 183
+    },
+    {
+      "human": 1,
+      "temparture": 39.23199174463939,
+      "userId": 1,
+      "id": 184
+    },
+    {
+      "human": 1,
+      "temparture": 33.41021356300582,
+      "userId": 1,
+      "id": 185
+    },
+    {
+      "human": 1,
+      "temparture": 39.74891303072053,
+      "userId": 1,
+      "id": 186
+    },
+    {
+      "human": 1,
+      "temparture": 31.409212634922415,
+      "userId": 1,
+      "id": 187
+    },
+    {
+      "human": 1,
+      "temparture": 33.18424108465755,
+      "userId": 1,
+      "id": 188
+    },
+    {
+      "human": 1,
+      "temparture": 37.85683315871842,
+      "userId": 1,
+      "id": 189
+    },
+    {
+      "human": 1,
+      "temparture": 33.81464489517534,
+      "userId": 1,
+      "id": 190
+    },
+    {
+      "human": 1,
+      "temparture": 39.88651422409417,
+      "userId": 1,
+      "id": 191
+    },
+    {
+      "human": 1,
+      "temparture": 36.12552682916014,
+      "userId": 1,
+      "id": 192
+    },
+    {
+      "human": 1,
+      "temparture": 34.65011382132134,
+      "userId": 1,
+      "id": 193
+    },
+    {
+      "human": 1,
+      "temparture": 31.753874754599313,
+      "userId": 1,
+      "id": 194
+    },
+    {
+      "human": 1,
+      "temparture": 32.30725290384314,
+      "userId": 1,
+      "id": 195
+    },
+    {
+      "human": 1,
+      "temparture": 30.334963867961882,
+      "userId": 1,
+      "id": 196
+    },
+    {
+      "human": 1,
+      "temparture": 35.12529095560063,
+      "userId": 1,
+      "id": 197
+    },
+    {
+      "human": 1,
+      "temparture": 39.89954514514151,
+      "userId": 1,
+      "id": 198
+    },
+    {
+      "human": 1,
+      "temparture": 32.69832097450602,
+      "userId": 1,
+      "id": 199
+    },
+    {
+      "human": 1,
+      "temparture": 37.03585525166012,
+      "userId": 1,
+      "id": 200
+    },
+    {
+      "human": 1,
+      "temparture": 31.421478629042685,
+      "userId": 1,
+      "id": 201
+    },
+    {
+      "human": 1,
+      "temparture": 39.25492556626827,
+      "userId": 1,
+      "id": 202
+    },
+    {
+      "human": 1,
+      "temparture": 36.27014059016417,
+      "userId": 1,
+      "id": 203
+    },
+    {
+      "human": 1,
+      "temparture": 33.05597470331622,
+      "userId": 1,
+      "id": 204
+    },
+    {
+      "human": 1,
+      "temparture": 35.90179508499187,
+      "userId": 1,
+      "id": 205
+    },
+    {
+      "human": 1,
+      "temparture": 30.607257833594495,
+      "userId": 1,
+      "id": 206
+    },
+    {
+      "human": 1,
+      "temparture": 37.182894550654694,
+      "userId": 1,
+      "id": 207
+    },
+    {
+      "human": 1,
+      "temparture": 38.68494596150698,
+      "userId": 1,
+      "id": 208
+    },
+    {
+      "human": 1,
+      "temparture": 34.00507059514514,
+      "userId": 1,
+      "id": 209
+    },
+    {
+      "human": 1,
+      "temparture": 37.5042646621442,
+      "userId": 1,
+      "id": 210
+    },
+    {
+      "human": 1,
+      "temparture": 39.46944674640059,
+      "userId": 1,
+      "id": 211
+    },
+    {
+      "human": 1,
+      "temparture": 37.23667339631205,
+      "userId": 1,
+      "id": 212
+    },
+    {
+      "human": 1,
+      "temparture": 38.06032101630365,
+      "userId": 1,
+      "id": 213
+    },
+    {
+      "human": 1,
+      "temparture": 33.23086079813533,
+      "userId": 1,
+      "id": 214
+    },
+    {
+      "human": 1,
+      "temparture": 33.371467026161866,
+      "userId": 1,
+      "id": 215
+    },
+    {
+      "human": 1,
+      "temparture": 36.28680425780063,
+      "userId": 1,
+      "id": 216
+    },
+    {
+      "human": 1,
+      "temparture": 35.8326727473129,
+      "userId": 1,
+      "id": 217
+    },
+    {
+      "human": 1,
+      "temparture": 30.894807413662097,
+      "userId": 1,
+      "id": 218
+    },
+    {
+      "human": 1,
+      "temparture": 35.55486928760972,
+      "userId": 1,
+      "id": 219
+    },
+    {
+      "human": 1,
+      "temparture": 36.45043856437312,
+      "userId": 1,
+      "id": 220
+    },
+    {
+      "human": 1,
+      "temparture": 35.44583385127177,
+      "userId": 1,
+      "id": 221
+    },
+    {
+      "human": 1,
+      "temparture": 36.028238706878966,
+      "userId": 1,
+      "id": 222
+    },
+    {
+      "human": 1,
+      "temparture": 32.647326870951936,
+      "userId": 1,
+      "id": 223
+    },
+    {
+      "human": 1,
+      "temparture": 39.88463885492788,
+      "userId": 1,
+      "id": 224
+    },
+    {
+      "human": 1,
+      "temparture": 31.843934771434718,
+      "userId": 1,
+      "id": 225
+    },
+    {
+      "human": 1,
+      "temparture": 31.95848551986051,
+      "userId": 1,
+      "id": 226
+    },
+    {
+      "human": 1,
+      "temparture": 31.048963087779004,
+      "userId": 1,
+      "id": 227
+    },
+    {
+      "human": 1,
+      "temparture": 30.718090837604727,
+      "userId": 1,
+      "id": 228
+    },
+    {
+      "human": 1,
+      "temparture": 35.97949654537905,
+      "userId": 1,
+      "id": 229
+    },
+    {
+      "human": 1,
+      "temparture": 36.35980973709685,
+      "userId": 1,
+      "id": 230
+    },
+    {
+      "human": 1,
+      "temparture": 33.691629451918324,
+      "userId": 1,
+      "id": 231
+    },
+    {
+      "human": 1,
+      "temparture": 33.30191484731859,
+      "userId": 1,
+      "id": 232
+    },
+    {
+      "human": 1,
+      "temparture": 31.65184590166547,
+      "userId": 1,
+      "id": 233
+    },
+    {
+      "human": 1,
+      "temparture": 39.495270099726625,
+      "userId": 1,
+      "id": 234
+    },
+    {
+      "human": 1,
+      "temparture": 36.547987023037685,
+      "userId": 1,
+      "id": 235
+    },
+    {
+      "human": 1,
+      "temparture": 31.074069311967556,
+      "userId": 1,
+      "id": 236
+    },
+    {
+      "human": 1,
+      "temparture": 32.174759812641106,
+      "userId": 1,
+      "id": 237
+    },
+    {
+      "human": 1,
+      "temparture": 33.51938120051747,
+      "userId": 1,
+      "id": 238
+    },
+    {
+      "human": 1,
+      "temparture": 32.25276283626326,
+      "userId": 1,
+      "id": 239
+    },
+    {
+      "human": 1,
+      "temparture": 32.17690551725542,
+      "userId": 1,
+      "id": 240
+    },
+    {
+      "human": 1,
+      "temparture": 36.588448496759625,
+      "userId": 1,
+      "id": 241
+    },
+    {
+      "human": 1,
+      "temparture": 30.236163911880823,
+      "userId": 1,
+      "id": 242
+    },
+    {
+      "human": 1,
+      "temparture": 36.51538761383599,
+      "userId": 1,
+      "id": 243
+    },
+    {
+      "human": 1,
+      "temparture": 36.15838107493997,
+      "userId": 1,
+      "id": 244
+    },
+    {
+      "temparture": 31.66652140040255,
+      "human": 0,
+      "userId": 1,
+      "id": 245
+    },
+    {
+      "temparture": 39.604168049165814,
+      "human": 0,
+      "userId": 1,
+      "id": 246
+    },
+    {
+      "temparture": 31.44165597542395,
+      "human": 1,
+      "userId": 1,
+      "id": 247
+    },
+    {
+      "temparture": 30.142727269094873,
+      "human": 1,
+      "userId": 1,
+      "id": 248
+    },
+    {
+      "temparture": 33.31452855618768,
+      "human": 0,
+      "userId": 1,
+      "id": 249
+    },
+    {
+      "temparture": 32.03129754739512,
+      "human": 0,
+      "userId": 1,
+      "id": 250
+    },
+    {
+      "temparture": 30.40970063068185,
+      "human": 1,
+      "userId": 1,
+      "id": 251
+    },
+    {
+      "temparture": 39.99124401831171,
+      "human": 0,
+      "userId": 1,
+      "id": 252
+    },
+    {
+      "temparture": 39.281519337822566,
+      "human": 1,
+      "userId": 1,
+      "id": 253
+    },
+    {
+      "temparture": 33.554693668302406,
+      "human": 0,
+      "userId": 1,
+      "id": 254
+    },
+    {
+      "temparture": 37.32511978417455,
+      "human": 0,
+      "userId": 1,
+      "id": 255
+    },
+    {
+      "temparture": 33.27267716923616,
+      "human": 1,
+      "userId": 1,
+      "id": 256
+    },
+    {
+      "temparture": 39.51508682929393,
+      "human": 0,
+      "userId": 1,
+      "id": 257
+    },
+    {
+      "temparture": 39.34243750190422,
+      "human": 0,
+      "userId": 1,
+      "id": 258
+    },
+    {
+      "temparture": 38.51462474274482,
+      "human": 1,
+      "userId": 1,
+      "id": 259
+    },
+    {
+      "temparture": 37.75886190828064,
+      "human": 1,
+      "userId": 1,
+      "id": 260
+    },
+    {
+      "temparture": 32.88682424241846,
+      "human": 1,
+      "userId": 1,
+      "id": 261
+    },
+    {
+      "temparture": 34.286780710028914,
+      "human": 1,
+      "userId": 1,
+      "id": 262
+    },
+    {
+      "temparture": 34.70901995315702,
+      "human": 0,
+      "userId": 1,
+      "id": 263
+    },
+    {
+      "temparture": 30.227875038955816,
+      "human": 0,
+      "userId": 1,
+      "id": 264
+    },
+    {
+      "temparture": 38.92624020369555,
+      "human": 0,
+      "userId": 1,
+      "id": 265
+    },
+    {
+      "temparture": 39.446508215499115,
+      "human": 0,
+      "userId": 1,
+      "id": 266
+    },
+    {
+      "temparture": 33.96975941641394,
+      "human": 1,
+      "userId": 1,
+      "id": 267
+    },
+    {
+      "temparture": 32.232584162212724,
+      "human": 1,
+      "userId": 1,
+      "id": 268
+    },
+    {
+      "temparture": 36.131760691453685,
+      "human": 0,
+      "userId": 1,
+      "id": 269
+    },
+    {
+      "temparture": 37.534799267275034,
+      "human": 0,
+      "userId": 1,
+      "id": 270
+    },
+    {
+      "temparture": 36.59817929256928,
+      "human": 1,
+      "userId": 1,
+      "id": 271
+    },
+    {
+      "temparture": 31.316467168467263,
+      "human": 0,
+      "userId": 1,
+      "id": 272
+    },
+    {
+      "temparture": 39.56448962367414,
+      "human": 0,
+      "userId": 1,
+      "id": 273
+    },
+    {
+      "temparture": 36.286058113435075,
+      "human": 1,
+      "userId": 1,
+      "id": 274
+    },
+    {
+      "temparture": 30.47816809302486,
+      "human": 1,
+      "userId": 1,
+      "id": 275
+    },
+    {
+      "temparture": 36.71870861879249,
+      "human": 0,
+      "userId": 1,
+      "id": 276
+    },
+    {
+      "temparture": 38.14958507184857,
+      "human": 1,
+      "userId": 1,
+      "id": 277
+    },
+    {
+      "temparture": 33.23751683159871,
+      "human": 1,
+      "userId": 1,
+      "id": 278
+    },
+    {
+      "temparture": 30.192697509496508,
+      "human": 0,
+      "userId": 1,
+      "id": 279
+    },
+    {
+      "temparture": 30.146202867786965,
+      "human": 0,
+      "userId": 1,
+      "id": 280
+    },
+    {
+      "temparture": 38.614012676906604,
+      "human": 0,
+      "userId": 1,
+      "id": 281
+    },
+    {
+      "temparture": 33.931568350358674,
+      "human": 0,
+      "userId": 1,
+      "id": 282
+    },
+    {
+      "temparture": 32.39382034378339,
+      "human": 0,
+      "userId": 1,
+      "id": 283
+    },
+    {
+      "temparture": 37.107521824470865,
+      "human": 1,
+      "userId": 1,
+      "id": 284
+    },
+    {
+      "temparture": 31.19699199828878,
+      "human": 0,
+      "userId": 1,
+      "id": 285
+    },
+    {
+      "temparture": 35.78417079475017,
+      "human": 0,
+      "userId": 1,
+      "id": 286
+    },
+    {
+      "temparture": 34.04442960080058,
+      "human": 0,
+      "userId": 1,
+      "id": 287
+    },
+    {
+      "temparture": 38.987099163119076,
+      "human": 1,
+      "userId": 1,
+      "id": 288
+    },
+    {
+      "temparture": 32.46043975029838,
+      "human": 0,
+      "userId": 1,
+      "id": 289
+    },
+    {
+      "temparture": 31.33397068853647,
+      "human": 0,
+      "userId": 1,
+      "id": 290
+    },
+    {
+      "temparture": 31.43774133464634,
+      "human": 1,
+      "userId": 1,
+      "id": 291
+    },
+    {
+      "temparture": 33.63972307948539,
+      "human": 1,
+      "userId": 1,
+      "id": 292
+    },
+    {
+      "temparture": 34.047765081528276,
+      "human": 1,
+      "userId": 1,
+      "id": 293
+    },
+    {
+      "temparture": 38.597588674236086,
+      "human": 1,
+      "userId": 1,
+      "id": 294
+    },
+    {
+      "temparture": 38.98590294819002,
+      "human": 1,
+      "userId": 1,
+      "id": 295
+    },
+    {
+      "temparture": 39.243421680521706,
+      "human": 1,
+      "userId": 1,
+      "id": 296
+    },
+    {
+      "temparture": 32.068908593513775,
+      "human": 1,
+      "userId": 1,
+      "id": 297
+    },
+    {
+      "temparture": 37.51614937710342,
+      "human": 1,
+      "userId": 1,
+      "id": 298
+    },
+    {
+      "temparture": 37.0335998804352,
+      "human": 0,
+      "userId": 1,
+      "id": 299
+    },
+    {
+      "temparture": 38.86902164787905,
+      "human": 0,
+      "userId": 1,
+      "id": 300
+    },
+    {
+      "temparture": 31.624552507247863,
+      "human": 1,
+      "userId": 1,
+      "id": 301
+    },
+    {
+      "temparture": 34.62255090498674,
+      "human": 0,
+      "userId": 1,
+      "id": 302
+    },
+    {
+      "temparture": 35.485814775355706,
+      "human": 1,
+      "userId": 1,
+      "id": 303
+    },
+    {
+      "temparture": 31.017221679634726,
+      "human": 0,
+      "userId": 1,
+      "id": 304
+    },
+    {
+      "temparture": 30.086503068271576,
+      "human": 0,
+      "userId": 1,
+      "id": 305
+    },
+    {
+      "temparture": 33.342144072250925,
+      "human": 1,
+      "userId": 1,
+      "id": 306
+    },
+    {
+      "temparture": 33.13381227622321,
+      "human": 1,
+      "userId": 1,
+      "id": 307
+    },
+    {
+      "temparture": 39.203803759640245,
+      "human": 0,
+      "userId": 1,
+      "id": 308
+    },
+    {
+      "temparture": 38.88066033426921,
+      "human": 0,
+      "userId": 1,
+      "id": 309
+    },
+    {
+      "temparture": 39.44246919722927,
+      "human": 1,
+      "userId": 1,
+      "id": 310
+    },
+    {
+      "temparture": 31.477087187884877,
+      "human": 1,
+      "userId": 1,
+      "id": 311
+    },
+    {
+      "temparture": 36.92359541123757,
+      "human": 0,
+      "userId": 1,
+      "id": 312
+    },
+    {
+      "temparture": 31.60939508648528,
+      "human": 1,
+      "userId": 1,
+      "id": 313
+    },
+    {
+      "temparture": 31.542004635572084,
+      "human": 0,
+      "userId": 1,
+      "id": 314
+    },
+    {
+      "temparture": 38.677846013024215,
+      "human": 0,
+      "userId": 1,
+      "id": 315
+    },
+    {
+      "temparture": 35.79479567244809,
+      "human": 0,
+      "userId": 1,
+      "id": 316
+    },
+    {
+      "temparture": 35.178871894863164,
+      "human": 1,
+      "userId": 1,
+      "id": 317
+    },
+    {
+      "temparture": 34.4750161634145,
+      "human": 0,
+      "userId": 1,
+      "id": 318
+    },
+    {
+      "temparture": 30.440852546085484,
+      "human": 1,
+      "userId": 1,
+      "id": 319
+    },
+    {
+      "temparture": 38.48183968394777,
+      "human": 1,
+      "userId": 1,
+      "id": 320
+    },
+    {
+      "temparture": 33.87398667805851,
+      "human": 1,
+      "userId": 1,
+      "id": 321
+    },
+    {
+      "temparture": 30.558161167711532,
+      "human": 1,
+      "userId": 1,
+      "id": 322
+    },
+    {
+      "temparture": 30.691467952588827,
+      "human": 0,
+      "userId": 1,
+      "id": 323
+    },
+    {
+      "temparture": 37.943923220668324,
+      "human": 1,
+      "userId": 1,
+      "id": 324
+    },
+    {
+      "temparture": 36.38376257717483,
+      "human": 0,
+      "userId": 1,
+      "id": 325
+    },
+    {
+      "temparture": 34.17532126174719,
+      "human": 0,
+      "userId": 1,
+      "id": 326
+    },
+    {
+      "temparture": 36.50184058575456,
+      "human": 1,
+      "userId": 1,
+      "id": 327
+    },
+    {
+      "temparture": 37.2549365938894,
+      "human": 1,
+      "userId": 1,
+      "id": 328
+    },
+    {
+      "temparture": 36.00030362761912,
+      "human": 0,
+      "userId": 1,
+      "id": 329
+    },
+    {
+      "temparture": 30.028544739800772,
+      "human": 0,
+      "userId": 1,
+      "id": 330
+    },
+    {
+      "temparture": 30.04770183776639,
+      "human": 1,
+      "userId": 1,
+      "id": 331
+    },
+    {
+      "temparture": 34.62642173207064,
+      "human": 0,
+      "userId": 1,
+      "id": 332
+    },
+    {
+      "temparture": 36.660709251416186,
+      "human": 0,
+      "userId": 1,
+      "id": 333
+    },
+    {
+      "temparture": 36.62240905504872,
+      "human": 0,
+      "userId": 1,
+      "id": 334
+    },
+    {
+      "temparture": 30.641235957007517,
+      "human": 0,
+      "userId": 1,
+      "id": 335
+    },
+    {
+      "temparture": 31.64850977728153,
+      "human": 0,
+      "userId": 1,
+      "id": 336
+    },
+    {
+      "temparture": 33.14065082824619,
+      "human": 1,
+      "userId": 1,
+      "id": 337
+    },
+    {
+      "temparture": 33.43077885500547,
+      "human": 1,
+      "userId": 1,
+      "id": 338
+    },
+    {
+      "temparture": 37.74359747321135,
+      "human": 0,
+      "userId": 1,
+      "id": 339
+    },
+    {
+      "temparture": 30.47661480389347,
+      "human": 1,
+      "userId": 1,
+      "id": 340
+    },
+    {
+      "temparture": 30.737200413134506,
+      "human": 0,
+      "userId": 1,
+      "id": 341
+    },
+    {
+      "temparture": 35.92015787368492,
+      "human": 1,
+      "userId": 1,
+      "id": 342
+    },
+    {
+      "temparture": 32.84711764329612,
+      "human": 0,
+      "userId": 1,
+      "id": 343
+    },
+    {
+      "temparture": 36.924166543966614,
+      "human": 0,
+      "userId": 1,
+      "id": 344
+    },
+    {
+      "temparture": 31.64367566832134,
+      "human": 1,
+      "userId": 1,
+      "id": 345
+    },
+    {
+      "temparture": 35.388390911325445,
+      "human": 1,
+      "userId": 1,
+      "id": 346
+    },
+    {
+      "temparture": 34.931429500663,
+      "human": 1,
+      "userId": 1,
+      "id": 347
+    },
+    {
+      "temparture": 39.05548684977447,
+      "human": 0,
+      "userId": 1,
+      "id": 348
+    },
+    {
+      "temparture": 30.1553481444106,
+      "human": 0,
+      "userId": 1,
+      "id": 349
+    },
+    {
+      "temparture": 31.662895870931294,
+      "human": 1,
+      "userId": 1,
+      "id": 350
+    },
+    {
+      "temparture": 32.530847235467654,
+      "human": 1,
+      "userId": 1,
+      "id": 351
+    },
+    {
+      "temparture": 31.19825063658537,
+      "human": 1,
+      "userId": 1,
+      "id": 352
+    },
+    {
+      "temparture": 38.817044718395856,
+      "human": 1,
+      "userId": 1,
+      "id": 353
+    },
+    {
+      "temparture": 39.23380583035499,
+      "human": 1,
+      "userId": 1,
+      "id": 354
+    },
+    {
+      "temparture": 36.93593495401401,
+      "human": 1,
+      "userId": 1,
+      "id": 355
+    },
+    {
+      "temparture": 31.039587040793734,
+      "human": 0,
+      "userId": 1,
+      "id": 356
+    },
+    {
+      "temparture": 34.18764358981045,
+      "human": 1,
+      "userId": 1,
+      "id": 357
+    },
+    {
+      "temparture": 39.93298420279521,
+      "human": 0,
+      "userId": 1,
+      "id": 358
+    },
+    {
+      "temparture": 34.13298933142787,
+      "human": 0,
+      "userId": 1,
+      "id": 359
+    },
+    {
+      "temparture": 35.95756601458584,
+      "human": 1,
+      "userId": 1,
+      "id": 360
+    },
+    {
+      "temparture": 36.31610274830236,
+      "human": 0,
+      "userId": 1,
+      "id": 361
+    },
+    {
+      "temparture": 33.827473668086554,
+      "human": 0,
+      "userId": 1,
+      "id": 362
+    },
+    {
+      "temparture": 34.22626526692457,
+      "human": 1,
+      "userId": 1,
+      "id": 363
+    },
+    {
+      "temparture": 34.870443039320115,
+      "human": 1,
+      "userId": 1,
+      "id": 364
+    },
+    {
+      "temparture": 33.82253415980833,
+      "human": 0,
+      "userId": 1,
+      "id": 365
+    },
+    {
+      "temparture": 36.78132079807605,
+      "human": 0,
+      "userId": 1,
+      "id": 366
+    },
+    {
+      "temparture": 33.97894256956534,
+      "human": 1,
+      "userId": 1,
+      "id": 367
+    },
+    {
+      "temparture": 37.07572077002167,
+      "human": 0,
+      "userId": 1,
+      "id": 368
+    },
+    {
+      "temparture": 38.76235576412273,
+      "human": 0,
+      "userId": 1,
+      "id": 369
+    },
+    {
+      "temparture": 38.03932724689794,
+      "human": 1,
+      "userId": 1,
+      "id": 370
+    },
+    {
+      "temparture": 33.54824372088577,
+      "human": 1,
+      "userId": 1,
+      "id": 371
+    },
+    {
+      "temparture": 38.11572314531574,
+      "human": 0,
+      "userId": 1,
+      "id": 372
+    },
+    {
+      "temparture": 31.83821258217678,
+      "human": 1,
+      "userId": 1,
+      "id": 373
+    },
+    {
+      "temparture": 32.90869551709071,
+      "human": 0,
+      "userId": 1,
+      "id": 374
+    },
+    {
+      "temparture": 35.912786174991936,
+      "human": 0,
+      "userId": 1,
+      "id": 375
+    },
+    {
+      "temparture": 37.31165672577535,
+      "human": 1,
+      "userId": 1,
+      "id": 376
+    },
+    {
+      "temparture": 34.50335665993424,
+      "human": 1,
+      "userId": 1,
+      "id": 377
+    },
+    {
+      "temparture": 32.686127296939176,
+      "human": 0,
+      "userId": 1,
+      "id": 378
+    },
+    {
+      "temparture": 36.022149645680955,
+      "human": 1,
+      "userId": 1,
+      "id": 379
+    },
+    {
+      "temparture": 31.419527974879582,
+      "human": 0,
+      "userId": 1,
+      "id": 380
+    },
+    {
+      "temparture": 31.277275808680358,
+      "human": 1,
+      "userId": 1,
+      "id": 381
+    },
+    {
+      "temparture": 37.8931448330909,
+      "human": 0,
+      "userId": 1,
+      "id": 382
+    },
+    {
+      "temparture": 36.0070486931055,
+      "human": 0,
+      "userId": 1,
+      "id": 383
+    },
+    {
+      "temparture": 37.858453051831,
+      "human": 1,
+      "userId": 1,
+      "id": 384
+    },
+    {
+      "temparture": 33.84922460324204,
+      "human": 0,
+      "userId": 1,
+      "id": 385
+    },
+    {
+      "temparture": 39.289185737445784,
+      "human": 1,
+      "userId": 1,
+      "id": 386
+    },
+    {
+      "temparture": 32.756743504287954,
+      "human": 1,
+      "userId": 1,
+      "id": 387
+    },
+    {
+      "temparture": 37.07005502676745,
+      "userId": 1,
+      "human": 0,
+      "id": 388
+    },
+    {
+      "temparture": 36.65568818250973,
+      "userId": 1,
+      "human": 1,
+      "id": 389
+    },
+    {
+      "temparture": 38.5690369878652,
+      "userId": 1,
+      "human": 0,
+      "id": 390
+    },
+    {
+      "temparture": 32.804713053389385,
+      "userId": 1,
+      "human": 1,
+      "id": 391
+    },
+    {
+      "temparture": 37.62068863303672,
+      "userId": 1,
+      "human": 0,
+      "id": 392
+    },
+    {
+      "temparture": 38.54449794537568,
+      "userId": 1,
+      "human": 0,
+      "id": 393
+    },
+    {
+      "temparture": 34.647796290073224,
+      "userId": 1,
+      "human": 1,
+      "id": 394
+    },
+    {
+      "temparture": 31.30504423451701,
+      "userId": 1,
+      "human": 0,
+      "id": 395
+    },
+    {
+      "temparture": 32.86116335312991,
+      "userId": 1,
+      "human": 0,
+      "id": 396
+    },
+    {
+      "temparture": 39.72753674633343,
+      "userId": 1,
+      "human": 0,
+      "id": 397
+    },
+    {
+      "temparture": 32.365841318006964,
+      "userId": 1,
+      "human": 0,
+      "id": 398
+    },
+    {
+      "temparture": 36.34348183427965,
+      "userId": 1,
+      "human": 0,
+      "id": 399
+    },
+    {
+      "temparture": 36.2113259149313,
+      "userId": 1,
+      "human": 1,
+      "id": 400
+    },
+    {
+      "temparture": 32.79422256414813,
+      "userId": 1,
+      "human": 1,
+      "id": 401
+    },
+    {
+      "temparture": 33.23981785048853,
+      "userId": 1,
+      "human": 1,
+      "id": 402
+    },
+    {
+      "temparture": 34.67529060363224,
+      "userId": 1,
+      "human": 1,
+      "id": 403
+    },
+    {
+      "temparture": 33.23315992292977,
+      "userId": 1,
+      "human": 0,
+      "id": 404
+    },
+    {
+      "temparture": 38.32737802035904,
+      "userId": 1,
+      "human": 1,
+      "id": 405
+    },
+    {
+      "temparture": 38.519993646433335,
+      "userId": 1,
+      "human": 1,
+      "id": 406
+    },
+    {
+      "temparture": 39.24581593412061,
+      "userId": 1,
+      "human": 0,
+      "id": 407
+    },
+    {
+      "temparture": 39.28458190125887,
+      "userId": 1,
+      "human": 1,
+      "id": 408
+    },
+    {
+      "temparture": 31.851121911670752,
+      "userId": 1,
+      "human": 0,
+      "id": 409
+    },
+    {
+      "temparture": 33.88009877626475,
+      "userId": 1,
+      "human": 0,
+      "id": 410
+    },
+    {
+      "temparture": 35.83459954266555,
+      "userId": 1,
+      "human": 0,
+      "id": 411
+    },
+    {
+      "temparture": 37.30623462785614,
+      "userId": 1,
+      "human": 1,
+      "id": 412
+    },
+    {
+      "temparture": 36.19990990387003,
+      "userId": 1,
+      "human": 0,
+      "id": 413
+    },
+    {
+      "temparture": 36.353054063419385,
+      "userId": 1,
+      "human": 1,
+      "id": 414
+    },
+    {
+      "temparture": 37.57838116139429,
+      "userId": 1,
+      "human": 1,
+      "id": 415
+    },
+    {
+      "temparture": 35.09078317768421,
+      "userId": 1,
+      "human": 1,
+      "id": 416
+    },
+    {
+      "temparture": 33.628713207560956,
+      "userId": 1,
+      "human": 0,
+      "id": 417
+    },
+    {
+      "temparture": 33.00368730180776,
+      "userId": 1,
+      "human": 0,
+      "id": 418
+    },
+    {
+      "temparture": 37.3431410063533,
+      "userId": 1,
+      "human": 1,
+      "id": 419
+    },
+    {
+      "temparture": 39.70325787771658,
+      "userId": 1,
+      "human": 0,
+      "id": 420
+    },
+    {
+      "temparture": 37.828575690142934,
+      "userId": 1,
+      "human": 1,
+      "id": 421
+    },
+    {
+      "temparture": 31.29870536659929,
+      "userId": 1,
+      "human": 1,
+      "id": 422
+    },
+    {
+      "temparture": 36.855666367999824,
+      "userId": 1,
+      "human": 1,
+      "id": 423
+    },
+    {
+      "temparture": 39.08359288310629,
+      "userId": 1,
+      "human": 0,
+      "id": 424
+    },
+    {
+      "temparture": 33.889329249568114,
+      "userId": 1,
+      "human": 0,
+      "id": 425
+    },
+    {
+      "temparture": 33.67029968797507,
+      "userId": 1,
+      "human": 1,
+      "id": 426
+    },
+    {
+      "temparture": 36.56745288241658,
+      "userId": 1,
+      "human": 0,
+      "id": 427
+    },
+    {
+      "temparture": 36.23624282279525,
+      "userId": 1,
+      "human": 1,
+      "id": 428
+    },
+    {
+      "temparture": 36.97712714183175,
+      "userId": 1,
+      "human": 1,
+      "id": 429
+    },
+    {
+      "temparture": 37.11463123563796,
+      "userId": 1,
+      "human": 0,
+      "id": 430
+    },
+    {
+      "temparture": 34.535146198418936,
+      "userId": 1,
+      "human": 1,
+      "id": 431
+    },
+    {
+      "temparture": 31.602200410843132,
+      "userId": 1,
+      "human": 0,
+      "id": 432
+    },
+    {
+      "temparture": 39.17395232968172,
+      "userId": 1,
+      "human": 0,
+      "id": 433
+    },
+    {
+      "temparture": 38.46145918181317,
+      "userId": 1,
+      "human": 1,
+      "id": 434
+    },
+    {
+      "temparture": 32.78195247951949,
+      "userId": 1,
+      "human": 1,
+      "id": 435
+    },
+    {
+      "temparture": 33.6010506288324,
+      "userId": 1,
+      "human": 1,
+      "id": 436
+    },
+    {
+      "temparture": 38.916065715042336,
+      "userId": 1,
+      "human": 0,
+      "id": 437
+    },
+    {
+      "temparture": 37.11729064886979,
+      "userId": 1,
+      "human": 1,
+      "id": 438
+    },
+    {
+      "temparture": 32.18247235296903,
+      "userId": 1,
+      "human": 1,
+      "id": 439
+    },
+    {
+      "temparture": 34.625516566401686,
+      "userId": 1,
+      "human": 0,
+      "id": 440
+    },
+    {
+      "temparture": 39.18207148281819,
+      "userId": 1,
+      "human": 0,
+      "id": 441
+    },
+    {
+      "temparture": 37.78982379341477,
+      "userId": 1,
+      "human": 0,
+      "id": 442
+    },
+    {
+      "temparture": 31.270001877208724,
+      "userId": 1,
+      "human": 0,
+      "id": 443
+    },
+    {
+      "temparture": 35.13545722896801,
+      "userId": 1,
+      "human": 1,
+      "id": 444
+    },
+    {
+      "temparture": 36.6010741405863,
+      "userId": 1,
+      "human": 0,
+      "id": 445
+    },
+    {
+      "temparture": 38.87427311016097,
+      "userId": 1,
+      "human": 0,
+      "id": 446
+    },
+    {
+      "temparture": 33.86309351353267,
+      "userId": 1,
+      "human": 0,
+      "id": 447
+    },
+    {
+      "temparture": 32.62083738551099,
+      "userId": 1,
+      "human": 1,
+      "id": 448
+    },
+    {
+      "temparture": 35.24028022012161,
+      "userId": 1,
+      "human": 1,
+      "id": 449
+    },
+    {
+      "temparture": 35.809502475155504,
+      "userId": 1,
+      "human": 0,
+      "id": 450
+    },
+    {
+      "temparture": 33.36077229722025,
+      "userId": 1,
+      "human": 1,
+      "id": 451
+    },
+    {
+      "temparture": 33.49709684594231,
+      "userId": 1,
+      "human": 1,
+      "id": 452
+    },
+    {
+      "temparture": 36.35735998926988,
+      "userId": 1,
+      "human": 0,
+      "id": 453
+    },
+    {
+      "temparture": 38.51997678126942,
+      "userId": 1,
+      "human": 1,
+      "id": 454
+    },
+    {
+      "temparture": 36.215806309309414,
+      "userId": 1,
+      "human": 1,
+      "id": 455
+    },
+    {
+      "temparture": 36.77564102671063,
+      "userId": 1,
+      "human": 0,
+      "id": 456
+    },
+    {
+      "temparture": 32.92605393316509,
+      "userId": 1,
+      "human": 0,
+      "id": 457
+    },
+    {
+      "temparture": 31.025087297135105,
+      "userId": 1,
+      "human": 1,
+      "id": 458
+    },
+    {
+      "temparture": 35.39215504998097,
+      "userId": 1,
+      "human": 1,
+      "id": 459
+    },
+    {
+      "temparture": 35.95313083764592,
+      "userId": 1,
+      "human": 1,
+      "id": 460
+    },
+    {
+      "temparture": 30.38207087618688,
+      "userId": 1,
+      "human": 0,
+      "id": 461
+    },
+    {
+      "temparture": 37.720988386851275,
+      "userId": 1,
+      "human": 0,
+      "id": 462
+    },
+    {
+      "temparture": 30.546606445470818,
+      "userId": 1,
+      "human": 1,
+      "id": 463
+    },
+    {
+      "temparture": 36.065013871014685,
+      "userId": 1,
+      "human": 1,
+      "id": 464
+    },
+    {
+      "temparture": 34.76518870613664,
+      "userId": 1,
+      "human": 1,
+      "id": 465
+    },
+    {
+      "temparture": 34.07357863161117,
+      "userId": 1,
+      "human": 0,
+      "id": 466
+    },
+    {
+      "temparture": 32.84775296658057,
+      "userId": 1,
+      "human": 1,
+      "id": 467
+    },
+    {
+      "temparture": 36.316973505210015,
+      "userId": 1,
+      "human": 0,
+      "id": 468
+    },
+    {
+      "temparture": 32.811214016115954,
+      "userId": 1,
+      "human": 1,
+      "id": 469
+    },
+    {
+      "temparture": 31.37390915962541,
+      "userId": 1,
+      "human": 0,
+      "id": 470
+    },
+    {
+      "temparture": 34.024851435586825,
+      "userId": 1,
+      "human": 0,
+      "id": 471
+    },
+    {
+      "temparture": 38.95246001918708,
+      "userId": 1,
+      "human": 0,
+      "id": 472
+    },
+    {
+      "temparture": 36.63045980014765,
+      "userId": 1,
+      "human": 1,
+      "id": 473
+    },
+    {
+      "temparture": 39.56207171045393,
+      "userId": 1,
+      "human": 0,
+      "id": 474
+    },
+    {
+      "temparture": 36.463567609391504,
+      "userId": 1,
+      "human": 0,
+      "id": 475
+    },
+    {
+      "temparture": 33.04409954863494,
+      "userId": 1,
+      "human": 1,
+      "id": 476
+    },
+    {
+      "temparture": 34.525808074619576,
+      "userId": 1,
+      "human": 1,
+      "id": 477
+    },
+    {
+      "temparture": 38.48210513840413,
+      "userId": 1,
+      "human": 0,
+      "id": 478
+    },
+    {
+      "temparture": 32.353331753185834,
+      "userId": 1,
+      "human": 1,
+      "id": 479
+    },
+    {
+      "temparture": 34.537371065290365,
+      "userId": 1,
+      "human": 1,
+      "id": 480
+    },
+    {
+      "temparture": 30.522159639745716,
+      "userId": 1,
+      "human": 1,
+      "id": 481
+    },
+    {
+      "temparture": 37.518113729321364,
+      "userId": 1,
+      "human": 0,
+      "id": 482
+    },
+    {
+      "temparture": 33.85580467074492,
+      "userId": 1,
+      "human": 0,
+      "id": 483
+    },
+    {
+      "temparture": 36.84522426915728,
+      "userId": 1,
+      "human": 1,
+      "id": 484
+    },
+    {
+      "temparture": 31.7621552899429,
+      "userId": 1,
+      "human": 1,
+      "id": 485
+    },
+    {
+      "temparture": 35.66727482125236,
+      "userId": 1,
+      "human": 0,
+      "id": 486
+    },
+    {
+      "temparture": 31.531279029545395,
+      "userId": 1,
+      "human": 0,
+      "id": 487
+    },
+    {
+      "temparture": 39.79917929322091,
+      "human": 1,
+      "userId": 1,
+      "id": 488
+    },
+    {
+      "temparture": 37.963230068647015,
+      "human": 1,
+      "userId": 1,
+      "id": 489
+    },
+    {
+      "temparture": 37.70343592125096,
+      "human": 1,
+      "userId": 1,
+      "id": 490
+    },
+    {
+      "temparture": 30.928201034374712,
+      "human": 1,
+      "userId": 1,
+      "id": 491
+    },
+    {
+      "temparture": 36.887370816054656,
+      "human": 0,
+      "userId": 1,
+      "id": 492
+    },
+    {
+      "temparture": 31.242188319207884,
+      "human": 0,
+      "userId": 1,
+      "id": 493
+    },
+    {
+      "temparture": 35.707556522076146,
+      "human": 0,
+      "userId": 1,
+      "id": 494
+    },
+    {
+      "temparture": 39.19117604539492,
+      "human": 1,
+      "userId": 1,
+      "id": 495
+    },
+    {
+      "temparture": 37.9212649847383,
+      "human": 1,
+      "userId": 1,
+      "id": 496
+    },
+    {
+      "temparture": 31.935147257713375,
+      "human": 1,
+      "userId": 1,
+      "id": 497
+    },
+    {
+      "temparture": 38.22858424927311,
+      "human": 0,
+      "userId": 1,
+      "id": 498
+    },
+    {
+      "temparture": 35.35332655005892,
+      "human": 0,
+      "userId": 1,
+      "id": 499
+    },
+    {
+      "temparture": 30.687126434299504,
+      "human": 0,
+      "userId": 1,
+      "id": 500
+    },
+    {
+      "temparture": 34.22473404191269,
+      "human": 0,
+      "userId": 1,
+      "id": 501
+    },
+    {
+      "temparture": 36.723169543720886,
+      "human": 1,
+      "userId": 1,
+      "id": 502
+    },
+    {
+      "temparture": 32.4326057164938,
+      "human": 0,
+      "userId": 1,
+      "id": 503
+    },
+    {
+      "temparture": 39.97684321110992,
+      "human": 1,
+      "userId": 1,
+      "id": 504
+    },
+    {
+      "temparture": 36.13558133904952,
+      "human": 1,
+      "userId": 1,
+      "id": 505
+    },
+    {
+      "temparture": 36.75080808507393,
+      "human": 1,
+      "userId": 1,
+      "id": 506
+    },
+    {
+      "temparture": 33.75038393517658,
+      "human": 0,
+      "userId": 1,
+      "id": 507
+    },
+    {
+      "temparture": 34.3449668315074,
+      "human": 1,
+      "userId": 1,
+      "id": 508
+    },
+    {
+      "temparture": 35.6384527540227,
+      "human": 1,
+      "userId": 1,
+      "id": 509
+    },
+    {
+      "temparture": 35.034811933506774,
+      "human": 0,
+      "userId": 1,
+      "id": 510
+    },
+    {
+      "temparture": 30.038860734946287,
+      "human": 0,
+      "userId": 1,
+      "id": 511
+    },
+    {
+      "temparture": 31.962637015617073,
+      "human": 0,
+      "userId": 1,
+      "id": 512
+    },
+    {
+      "temparture": 32.13460521726602,
+      "human": 0,
+      "userId": 1,
+      "id": 513
+    },
+    {
+      "temparture": 38.06705169096774,
+      "human": 0,
+      "userId": 1,
+      "id": 514
+    },
+    {
+      "temparture": 31.021161013057032,
+      "human": 0,
+      "userId": 1,
+      "id": 515
+    },
+    {
+      "temparture": 37.416621410267844,
+      "human": 1,
+      "userId": 1,
+      "id": 516
+    },
+    {
+      "temparture": 36.17611730979178,
+      "human": 1,
+      "userId": 1,
+      "id": 517
+    },
+    {
+      "temparture": 34.392735695780786,
+      "human": 1,
+      "userId": 1,
+      "id": 518
+    },
+    {
+      "temparture": 37.174819511520695,
+      "human": 0,
+      "userId": 1,
+      "id": 519
+    },
+    {
+      "temparture": 30.727118813401905,
+      "human": 1,
+      "userId": 1,
+      "id": 520
+    },
+    {
+      "temparture": 36.02444823677831,
+      "human": 0,
+      "userId": 1,
+      "id": 521
+    },
+    {
+      "temparture": 39.52413614810586,
+      "human": 1,
+      "userId": 1,
+      "id": 522
+    },
+    {
+      "temparture": 34.54392730343247,
+      "human": 0,
+      "userId": 1,
+      "id": 523
+    },
+    {
+      "temparture": 37.447085590061604,
+      "human": 0,
+      "userId": 1,
+      "id": 524
+    },
+    {
+      "temparture": 37.797989157557176,
+      "human": 1,
+      "userId": 1,
+      "id": 525
+    },
+    {
+      "temparture": 36.23356118854854,
+      "human": 1,
+      "userId": 1,
+      "id": 526
+    },
+    {
+      "temparture": 34.52041770659238,
+      "human": 0,
+      "userId": 1,
+      "id": 527
+    },
+    {
+      "temparture": 32.1045998099784,
+      "human": 1,
+      "userId": 1,
+      "id": 528
+    },
+    {
+      "temparture": 30.546975591927623,
+      "human": 1,
+      "userId": 1,
+      "id": 529
+    },
+    {
+      "temparture": 30.047561340549606,
+      "human": 0,
+      "userId": 1,
+      "id": 530
+    },
+    {
+      "temparture": 38.452151281845296,
+      "human": 0,
+      "userId": 1,
+      "id": 531
+    },
+    {
+      "temparture": 31.711106495770867,
+      "human": 0,
+      "userId": 1,
+      "id": 532
+    },
+    {
+      "temparture": 32.88276381046045,
+      "human": 1,
+      "userId": 1,
+      "id": 533
+    },
+    {
+      "temparture": 34.24475680848111,
+      "human": 0,
+      "userId": 1,
+      "id": 534
+    },
+    {
+      "temparture": 35.39642044553658,
+      "human": 1,
+      "userId": 1,
+      "id": 535
+    },
+    {
+      "temparture": 35.650133621188814,
+      "human": 0,
+      "userId": 1,
+      "id": 536
+    },
+    {
+      "temparture": 31.612942440884105,
+      "human": 0,
+      "userId": 1,
+      "id": 537
+    },
+    {
+      "temparture": 39.21347388509545,
+      "human": 1,
+      "userId": 1,
+      "id": 538
+    },
+    {
+      "temparture": 33.57667710066452,
+      "human": 1,
+      "userId": 1,
+      "id": 539
+    },
+    {
+      "temparture": 32.77336134850296,
+      "human": 0,
+      "userId": 1,
+      "id": 540
+    },
+    {
+      "temparture": 30.889123766525692,
+      "human": 0,
+      "userId": 1,
+      "id": 541
+    },
+    {
+      "temparture": 31.6359523866556,
+      "human": 0,
+      "userId": 1,
+      "id": 542
+    },
+    {
+      "temparture": 36.75782295543928,
+      "human": 0,
+      "userId": 1,
+      "id": 543
+    },
+    {
+      "temparture": 35.06375133577808,
+      "human": 1,
+      "userId": 1,
+      "id": 544
+    },
+    {
+      "temparture": 37.87078403533818,
+      "human": 1,
+      "userId": 1,
+      "id": 545
+    },
+    {
+      "temparture": 30.39007749903923,
+      "human": 1,
+      "userId": 1,
+      "id": 546
+    },
+    {
+      "temparture": 35.22207709323493,
+      "human": 1,
+      "userId": 1,
+      "id": 547
+    },
+    {
+      "temparture": 33.318429256510896,
+      "human": 0,
+      "userId": 1,
+      "id": 548
+    },
+    {
+      "temparture": 36.21079545632626,
+      "human": 1,
+      "userId": 1,
+      "id": 549
+    },
+    {
+      "temparture": 37.26008089415967,
+      "human": 1,
+      "userId": 1,
+      "id": 550
+    },
+    {
+      "temparture": 34.79348507720612,
+      "human": 0,
+      "userId": 1,
+      "id": 551
+    },
+    {
+      "temparture": 35.029424428935144,
+      "human": 1,
+      "userId": 1,
+      "id": 552
+    },
+    {
+      "temparture": 38.94208384688445,
+      "human": 1,
+      "userId": 1,
+      "id": 553
+    },
+    {
+      "temparture": 30.314974895702264,
+      "human": 1,
+      "userId": 1,
+      "id": 554
+    },
+    {
+      "temparture": 33.73080006025356,
+      "human": 0,
+      "userId": 1,
+      "id": 555
+    },
+    {
+      "temparture": 39.94435486516991,
+      "human": 1,
+      "userId": 1,
+      "id": 556
+    },
+    {
+      "temparture": 30.637916287338427,
+      "human": 0,
+      "userId": 1,
+      "id": 557
+    },
+    {
+      "temparture": 38.04949532748419,
+      "human": 0,
+      "userId": 1,
+      "id": 558
+    },
+    {
+      "temparture": 30.36179478927222,
+      "human": 1,
+      "userId": 1,
+      "id": 559
+    },
+    {
+      "temparture": 39.70288416064838,
+      "human": 1,
+      "userId": 1,
+      "id": 560
+    },
+    {
+      "temparture": 39.80541842521253,
+      "human": 1,
+      "userId": 1,
+      "id": 561
+    },
+    {
+      "temparture": 36.24177954863201,
+      "human": 1,
+      "userId": 1,
+      "id": 562
+    },
+    {
+      "temparture": 32.23315223081525,
+      "human": 1,
+      "userId": 1,
+      "id": 563
+    },
+    {
+      "temparture": 34.84794766539464,
+      "human": 0,
+      "userId": 1,
+      "id": 564
+    },
+    {
+      "temparture": 33.6395628605694,
+      "human": 1,
+      "userId": 1,
+      "id": 565
+    },
+    {
+      "temparture": 38.79161764279914,
+      "human": 1,
+      "userId": 1,
+      "id": 566
+    },
+    {
+      "temparture": 36.36113071809445,
+      "human": 1,
+      "userId": 1,
+      "id": 567
+    },
+    {
+      "temparture": 30.60131949073341,
+      "human": 1,
+      "userId": 1,
+      "id": 568
+    },
+    {
+      "temparture": 34.35923864768933,
+      "human": 0,
+      "userId": 1,
+      "id": 569
+    },
+    {
+      "temparture": 31.761220502592572,
+      "human": 1,
+      "userId": 1,
+      "id": 570
+    },
+    {
+      "temparture": 32.80275250612229,
+      "human": 1,
+      "userId": 1,
+      "id": 571
+    },
+    {
+      "temparture": 30.75376484978124,
+      "human": 0,
+      "userId": 1,
+      "id": 572
+    },
+    {
+      "temparture": 34.19181521574674,
+      "human": 0,
+      "userId": 1,
+      "id": 573
+    },
+    {
+      "temparture": 30.184829833529264,
+      "human": 0,
+      "userId": 1,
+      "id": 574
+    },
+    {
+      "temparture": 36.703765097281284,
+      "human": 0,
+      "userId": 1,
+      "id": 575
+    },
+    {
+      "temparture": 39.48636067227917,
+      "human": 1,
+      "userId": 1,
+      "id": 576
+    },
+    {
+      "temparture": 34.19454928194391,
+      "human": 1,
+      "userId": 1,
+      "id": 577
+    },
+    {
+      "temparture": 39.19908328619878,
+      "human": 0,
+      "userId": 1,
+      "id": 578
+    },
+    {
+      "temparture": 34.17704540635954,
+      "human": 1,
+      "userId": 1,
+      "id": 579
+    },
+    {
+      "temparture": 38.78985120784512,
+      "human": 0,
+      "userId": 1,
+      "id": 580
+    },
+    {
+      "temparture": 30.178925103481852,
+      "human": 0,
+      "userId": 1,
+      "id": 581
+    },
+    {
+      "temparture": 37.567218688734116,
+      "human": 0,
+      "userId": 1,
+      "id": 582
+    },
+    {
+      "temparture": 31.820558986447796,
+      "human": 0,
+      "userId": 1,
+      "id": 583
+    },
+    {
+      "temparture": 32.57066235247912,
+      "human": 0,
+      "userId": 1,
+      "id": 584
+    },
+    {
+      "temparture": 32.21294193088251,
+      "human": 0,
+      "userId": 1,
+      "id": 585
+    },
+    {
+      "temparture": 37.357928329465764,
+      "human": 1,
+      "userId": 1,
+      "id": 586
+    },
+    {
+      "temparture": 39.407778437707506,
+      "human": 0,
+      "userId": 1,
+      "id": 587
+    },
+    {
+      "temparture": 38.60860320885554,
+      "human": 1,
+      "userId": 1,
+      "id": 588
+    },
+    {
+      "temparture": 38.64615525835926,
+      "human": 1,
+      "userId": 1,
+      "id": 589
+    },
+    {
+      "temparture": 37.440732356211186,
+      "human": 0,
+      "userId": 1,
+      "id": 590
+    },
+    {
+      "temparture": 38.43259889037975,
+      "human": 0,
+      "userId": 1,
+      "id": 591
+    },
+    {
+      "temparture": 37.1288301659769,
+      "human": 1,
+      "userId": 1,
+      "id": 592
+    },
+    {
+      "temparture": 33.56042688419903,
+      "human": 0,
+      "userId": 1,
+      "id": 593
+    },
+    {
+      "temparture": 36.1739093547962,
+      "human": 1,
+      "userId": 1,
+      "id": 594
+    },
+    {
+      "temparture": 32.067405089756605,
+      "human": 1,
+      "userId": 1,
+      "id": 595
+    },
+    {
+      "temparture": 33.48571895822585,
+      "human": 0,
+      "userId": 1,
+      "id": 596
+    },
+    {
+      "temparture": 36.821010300869105,
+      "human": 1,
+      "userId": 1,
+      "id": 597
+    },
+    {
+      "temparture": 35.352641843433034,
+      "human": 0,
+      "userId": 1,
+      "id": 598
+    },
+    {
+      "temparture": 32.17319661089651,
+      "human": 0,
+      "userId": 1,
+      "id": 599
+    },
+    {
+      "temparture": 37.8711136707831,
+      "human": 1,
+      "userId": 1,
+      "id": 600
+    },
+    {
+      "temparture": 32.83905343956182,
+      "human": 0,
+      "userId": 1,
+      "id": 601
+    },
+    {
+      "temparture": 32.01870596746442,
+      "human": 1,
+      "userId": 1,
+      "id": 602
+    },
+    {
+      "temparture": 35.79877904676862,
+      "human": 0,
+      "userId": 1,
+      "id": 603
+    },
+    {
+      "temparture": 30.823376110826764,
+      "human": 1,
+      "userId": 1,
+      "id": 604
+    },
+    {
+      "temparture": 31.821789232033897,
+      "human": 1,
+      "userId": 1,
+      "id": 605
+    },
+    {
+      "temparture": 35.13015388180069,
+      "human": 0,
+      "userId": 1,
+      "id": 606
+    },
+    {
+      "temparture": 35.534130607689185,
+      "human": 0,
+      "userId": 1,
+      "id": 607
+    },
+    {
+      "temparture": 31.01238830500934,
+      "human": 0,
+      "userId": 1,
+      "id": 608
+    },
+    {
+      "temparture": 34.26704573417111,
+      "human": 0,
+      "userId": 1,
+      "id": 609
+    },
+    {
+      "temparture": 31.88990680276274,
+      "human": 0,
+      "userId": 1,
+      "id": 610
+    },
+    {
+      "temparture": 36.09694183941796,
+      "human": 0,
+      "userId": 1,
+      "id": 611
+    },
+    {
+      "temparture": 31.367011231494903,
+      "human": 0,
+      "userId": 1,
+      "id": 612
+    },
+    {
+      "temparture": 38.45354030568609,
+      "human": 0,
+      "userId": 1,
+      "id": 613
+    },
+    {
+      "temparture": 36.43105316739475,
+      "human": 0,
+      "userId": 1,
+      "id": 614
+    },
+    {
+      "temparture": 34.273169864586016,
+      "human": 1,
+      "userId": 1,
+      "id": 615
+    },
+    {
+      "temparture": 33.45080754021806,
+      "human": 1,
+      "userId": 1,
+      "id": 616
+    },
+    {
+      "temparture": 32.345824393925824,
+      "human": 1,
+      "userId": 1,
+      "id": 617
+    },
+    {
+      "temparture": 33.129271176206274,
+      "human": 0,
+      "userId": 1,
+      "id": 618
+    },
+    {
+      "temparture": 39.20559831258834,
+      "human": 0,
+      "userId": 1,
+      "id": 619
+    },
+    {
+      "temparture": 36.08677679609598,
+      "human": 1,
+      "userId": 1,
+      "id": 620
+    },
+    {
+      "temparture": 31.906093500067772,
+      "human": 1,
+      "userId": 1,
+      "id": 621
+    },
+    {
+      "temparture": 37.47687972133737,
+      "human": 0,
+      "userId": 1,
+      "id": 622
+    },
+    {
+      "temparture": 31.227445581882233,
+      "human": 1,
+      "userId": 1,
+      "id": 623
+    },
+    {
+      "temparture": 30.34517858919794,
+      "human": 0,
+      "userId": 1,
+      "id": 624
+    },
+    {
+      "temparture": 36.67495367097076,
+      "human": 0,
+      "userId": 1,
+      "id": 625
+    },
+    {
+      "temparture": 32.86960613381316,
+      "human": 0,
+      "userId": 1,
+      "id": 626
+    },
+    {
+      "temparture": 30.59899609564711,
+      "human": 0,
+      "userId": 1,
+      "id": 627
+    },
+    {
+      "temparture": 35.41596539953982,
+      "human": 1,
+      "userId": 1,
+      "id": 628
+    },
+    {
+      "temparture": 31.599615139727238,
+      "human": 1,
+      "userId": 1,
+      "id": 629
+    },
+    {
+      "temparture": 36.16803712443946,
+      "human": 1,
+      "userId": 1,
+      "id": 630
+    },
+    {
+      "temparture": 37.61823262022591,
+      "human": 0,
+      "userId": 1,
+      "id": 631
+    },
+    {
+      "temparture": 33.36247030581541,
+      "human": 1,
+      "userId": 1,
+      "id": 632
+    },
+    {
+      "temparture": 36.00414284851658,
+      "human": 0,
+      "userId": 1,
+      "id": 633
+    },
+    {
+      "temparture": 32.6198055057076,
+      "human": 0,
+      "userId": 1,
+      "id": 634
+    },
+    {
+      "temparture": 36.86910161586251,
+      "human": 1,
+      "userId": 1,
+      "id": 635
+    },
+    {
+      "temparture": 31.22822584651266,
+      "human": 0,
+      "userId": 1,
+      "id": 636
+    },
+    {
+      "temparture": 32.718726646963994,
+      "human": 0,
+      "userId": 1,
+      "id": 637
+    },
+    {
+      "temparture": 30.06284956610745,
+      "human": 0,
+      "userId": 1,
+      "id": 638
+    },
+    {
+      "temparture": 33.767634127427065,
+      "human": 0,
+      "userId": 1,
+      "id": 639
+    },
+    {
+      "temparture": 30.191658027140686,
+      "human": 0,
+      "userId": 1,
+      "id": 640
+    },
+    {
+      "temparture": 36.582290369354965,
+      "human": 1,
+      "userId": 1,
+      "id": 641
+    },
+    {
+      "temparture": 34.777783627632566,
+      "human": 0,
+      "userId": 1,
+      "id": 642
+    },
+    {
+      "temparture": 39.78010501608278,
+      "human": 0,
+      "userId": 1,
+      "id": 643
+    },
+    {
+      "temparture": 31.948148637434546,
+      "human": 0,
+      "userId": 1,
+      "id": 644
+    },
+    {
+      "temparture": 31.849617627395205,
+      "human": 0,
+      "userId": 1,
+      "id": 645
+    },
+    {
+      "temparture": 36.12885323024642,
+      "human": 0,
+      "userId": 1,
+      "id": 646
+    },
+    {
+      "temparture": 37.30761563281834,
+      "human": 0,
+      "userId": 1,
+      "id": 647
+    },
+    {
+      "temparture": 31.309390270370947,
+      "human": 1,
+      "userId": 1,
+      "id": 648
+    },
+    {
+      "temparture": 39.163799296359976,
+      "human": 1,
+      "userId": 1,
+      "id": 649
+    },
+    {
+      "temparture": 30.001843014926937,
+      "human": 0,
+      "userId": 1,
+      "id": 650
+    },
+    {
+      "temparture": 39.8154424397339,
+      "human": 0,
+      "userId": 1,
+      "id": 651
+    },
+    {
+      "temparture": 30.61548300216894,
+      "human": 1,
+      "userId": 1,
+      "id": 652
+    },
+    {
+      "temparture": 30.53518111331701,
+      "human": 0,
+      "userId": 1,
+      "id": 653
+    },
+    {
+      "temparture": 30.860469001372774,
+      "human": 1,
+      "userId": 1,
+      "id": 654
+    },
+    {
+      "temparture": 38.1155657364617,
+      "human": 1,
+      "userId": 1,
+      "id": 655
+    },
+    {
+      "temparture": 35.47642199444871,
+      "human": 0,
+      "userId": 1,
+      "id": 656
+    },
+    {
+      "temparture": 34.58693893994588,
+      "human": 0,
+      "userId": 1,
+      "id": 657
+    },
+    {
+      "temparture": 32.253416332330474,
+      "human": 1,
+      "userId": 1,
+      "id": 658
+    },
+    {
+      "temparture": 37.7328644788485,
+      "human": 0,
+      "userId": 1,
+      "id": 659
+    },
+    {
+      "temparture": 31.37603865192655,
+      "human": 1,
+      "userId": 1,
+      "id": 660
+    },
+    {
+      "temparture": 31.317060302863727,
+      "human": 0,
+      "userId": 1,
+      "id": 661
+    },
+    {
+      "temparture": 33.10856914896054,
+      "human": 0,
+      "userId": 1,
+      "id": 662
+    },
+    {
+      "temparture": 31.08192814122449,
+      "human": 1,
+      "userId": 1,
+      "id": 663
+    },
+    {
+      "temparture": 32.758491443158476,
+      "human": 0,
+      "userId": 1,
+      "id": 664
+    },
+    {
+      "temparture": 39.98826614765041,
+      "human": 1,
+      "userId": 1,
+      "id": 665
+    },
+    {
+      "temparture": 35.1334086873297,
+      "human": 1,
+      "userId": 1,
+      "id": 666
+    },
+    {
+      "temparture": 30.73999332666414,
+      "human": 1,
+      "userId": 1,
+      "id": 667
+    },
+    {
+      "temparture": 39.017663927266724,
+      "human": 0,
+      "userId": 1,
+      "id": 668
+    },
+    {
+      "temparture": 37.06167973508795,
+      "human": 0,
+      "userId": 1,
+      "id": 669
+    },
+    {
+      "temparture": 33.539020998050034,
+      "human": 1,
+      "userId": 1,
+      "id": 670
+    },
+    {
+      "temparture": 32.91415416412944,
+      "human": 1,
+      "userId": 1,
+      "id": 671
+    },
+    {
+      "temparture": 37.870104655729996,
+      "human": 0,
+      "userId": 1,
+      "id": 672
+    },
+    {
+      "temparture": 35.58723418570801,
+      "human": 0,
+      "userId": 1,
+      "id": 673
+    },
+    {
+      "temparture": 31.53766160382324,
+      "human": 1,
+      "userId": 1,
+      "id": 674
+    },
+    {
+      "temparture": 35.231373289743686,
+      "human": 1,
+      "userId": 1,
+      "id": 675
+    },
+    {
+      "temparture": 35.36927015945774,
+      "human": 0,
+      "userId": 1,
+      "id": 676
+    },
+    {
+      "temparture": 35.20165639788022,
+      "human": 0,
+      "userId": 1,
+      "id": 677
+    },
+    {
+      "temparture": 35.83860136978344,
+      "human": 0,
+      "userId": 1,
+      "id": 678
+    },
+    {
+      "temparture": 31.575643545026885,
+      "human": 1,
+      "userId": 1,
+      "id": 679
+    },
+    {
+      "temparture": 34.51469216296341,
+      "human": 1,
+      "userId": 1,
+      "id": 680
+    },
+    {
+      "temparture": 35.94832602502672,
+      "human": 0,
+      "userId": 1,
+      "id": 681
+    },
+    {
+      "temparture": 31.572011746008172,
+      "human": 0,
+      "userId": 1,
+      "id": 682
+    },
+    {
+      "temparture": 38.324430310180134,
+      "human": 0,
+      "userId": 1,
+      "id": 683
+    },
+    {
+      "temparture": 38.778972291538985,
+      "human": 0,
+      "userId": 1,
+      "id": 684
+    },
+    {
+      "temparture": 30.204779645083747,
+      "human": 0,
+      "userId": 1,
+      "id": 685
+    },
+    {
+      "temparture": 30.865424391644066,
+      "human": 0,
+      "userId": 1,
+      "id": 686
+    },
+    {
+      "temparture": 39.57628587125148,
+      "human": 1,
+      "userId": 1,
+      "id": 687
+    },
+    {
+      "temparture": 33.90910270268128,
+      "userId": 1,
+      "human": 0,
+      "id": 688
+    },
+    {
+      "temparture": 31.655463858847916,
+      "userId": 1,
+      "human": 0,
+      "id": 689
+    },
+    {
+      "temparture": 36.50479449363082,
+      "userId": 1,
+      "human": 1,
+      "id": 690
+    },
+    {
+      "temparture": 30.877407137269454,
+      "userId": 1,
+      "human": 0,
+      "id": 691
+    },
+    {
+      "temparture": 37.998428799394574,
+      "userId": 1,
+      "human": 0,
+      "id": 692
+    },
+    {
+      "temparture": 36.31860468674728,
+      "userId": 1,
+      "human": 0,
+      "id": 693
+    },
+    {
+      "temparture": 39.818484990614266,
+      "userId": 1,
+      "human": 1,
+      "id": 694
+    },
+    {
+      "temparture": 39.83169766353074,
+      "userId": 1,
+      "human": 0,
+      "id": 695
+    },
+    {
+      "temparture": 35.972148875607,
+      "userId": 1,
+      "human": 1,
+      "id": 696
+    },
+    {
+      "temparture": 37.86771749870416,
+      "userId": 1,
+      "human": 0,
+      "id": 697
+    },
+    {
+      "temparture": 32.66413573704468,
+      "userId": 1,
+      "human": 1,
+      "id": 698
+    },
+    {
+      "temparture": 36.42726831644862,
+      "userId": 1,
+      "human": 1,
+      "id": 699
+    },
+    {
+      "temparture": 32.70968087601001,
+      "userId": 1,
+      "human": 0,
+      "id": 700
+    },
+    {
+      "temparture": 30.200599417337692,
+      "userId": 1,
+      "human": 0,
+      "id": 701
+    },
+    {
+      "temparture": 33.57495757486581,
+      "userId": 1,
+      "human": 1,
+      "id": 702
+    },
+    {
+      "temparture": 34.383811659356354,
+      "userId": 1,
+      "human": 1,
+      "id": 703
+    },
+    {
+      "temparture": 32.62313103791136,
+      "userId": 1,
+      "human": 1,
+      "id": 704
+    },
+    {
+      "temparture": 30.374903997855903,
+      "userId": 1,
+      "human": 0,
+      "id": 705
+    },
+    {
+      "temparture": 31.35646543025657,
+      "userId": 1,
+      "human": 0,
+      "id": 706
+    },
+    {
+      "temparture": 36.9725109673479,
+      "userId": 1,
+      "human": 1,
+      "id": 707
+    },
+    {
+      "temparture": 36.20760541481003,
+      "userId": 1,
+      "human": 0,
+      "id": 708
+    },
+    {
+      "temparture": 30.615400222750814,
+      "userId": 1,
+      "human": 0,
+      "id": 709
+    },
+    {
+      "temparture": 34.96675708672092,
+      "userId": 1,
+      "human": 0,
+      "id": 710
+    },
+    {
+      "temparture": 32.38833562112218,
+      "userId": 1,
+      "human": 1,
+      "id": 711
+    },
+    {
+      "temparture": 31.741835720612706,
+      "userId": 1,
+      "human": 0,
+      "id": 712
+    },
+    {
+      "temparture": 31.20219658703821,
+      "userId": 1,
+      "human": 1,
+      "id": 713
+    },
+    {
+      "temparture": 34.16737783541776,
+      "userId": 1,
+      "human": 1,
+      "id": 714
+    },
+    {
+      "temparture": 35.13111582945954,
+      "userId": 1,
+      "human": 0,
+      "id": 715
+    },
+    {
+      "temparture": 37.365767927738446,
+      "userId": 1,
+      "human": 0,
+      "id": 716
+    },
+    {
+      "temparture": 32.74452806524948,
+      "userId": 1,
+      "human": 1,
+      "id": 717
+    },
+    {
+      "temparture": 33.83389091771583,
+      "userId": 1,
+      "human": 0,
+      "id": 718
+    },
+    {
+      "temparture": 37.01856367689051,
+      "userId": 1,
+      "human": 0,
+      "id": 719
+    },
+    {
+      "temparture": 34.760788258212656,
+      "userId": 1,
+      "human": 1,
+      "id": 720
+    },
+    {
+      "temparture": 35.70891120877611,
+      "userId": 1,
+      "human": 0,
+      "id": 721
+    },
+    {
+      "temparture": 36.16587791122254,
+      "userId": 1,
+      "human": 1,
+      "id": 722
+    },
+    {
+      "temparture": 34.50183719675644,
+      "userId": 1,
+      "human": 0,
+      "id": 723
+    },
+    {
+      "temparture": 35.74254474961898,
+      "userId": 1,
+      "human": 0,
+      "id": 724
+    },
+    {
+      "temparture": 31.05944094920501,
+      "userId": 1,
+      "human": 0,
+      "id": 725
+    },
+    {
+      "temparture": 34.485022807235445,
+      "userId": 1,
+      "human": 1,
+      "id": 726
+    },
+    {
+      "temparture": 31.146799869301624,
+      "userId": 1,
+      "human": 0,
+      "id": 727
+    },
+    {
+      "temparture": 39.3231797046969,
+      "userId": 1,
+      "human": 0,
+      "id": 728
+    },
+    {
+      "temparture": 30.810653357214694,
+      "userId": 1,
+      "human": 1,
+      "id": 729
+    },
+    {
+      "temparture": 31.646551965182105,
+      "userId": 1,
+      "human": 0,
+      "id": 730
+    },
+    {
+      "temparture": 37.81584320364769,
+      "userId": 1,
+      "human": 1,
+      "id": 731
+    },
+    {
+      "temparture": 30.821483779749332,
+      "userId": 1,
+      "human": 1,
+      "id": 732
+    },
+    {
+      "temparture": 33.54085315828116,
+      "userId": 1,
+      "human": 1,
+      "id": 733
+    },
+    {
+      "temparture": 31.442476569136996,
+      "userId": 1,
+      "human": 1,
+      "id": 734
+    },
+    {
+      "temparture": 36.63947289069785,
+      "userId": 1,
+      "human": 1,
+      "id": 735
+    },
+    {
+      "temparture": 35.9314477111155,
+      "userId": 1,
+      "human": 1,
+      "id": 736
+    },
+    {
+      "temparture": 34.47582134276108,
+      "userId": 1,
+      "human": 0,
+      "id": 737
+    },
+    {
+      "temparture": 39.147418757848676,
+      "userId": 1,
+      "human": 0,
+      "id": 738
+    },
+    {
+      "temparture": 30.477977648992677,
+      "userId": 1,
+      "human": 0,
+      "id": 739
+    },
+    {
+      "temparture": 33.382813652317495,
+      "userId": 1,
+      "human": 1,
+      "id": 740
+    },
+    {
+      "temparture": 33.36568979035238,
+      "userId": 1,
+      "human": 0,
+      "id": 741
+    },
+    {
+      "temparture": 36.02767907566638,
+      "userId": 1,
+      "human": 1,
+      "id": 742
+    },
+    {
+      "temparture": 33.81776475341025,
+      "userId": 1,
+      "human": 1,
+      "id": 743
+    },
+    {
+      "temparture": 36.61067459171275,
+      "userId": 1,
+      "human": 1,
+      "id": 744
+    },
+    {
+      "temparture": 30.793835759683212,
+      "userId": 1,
+      "human": 1,
+      "id": 745
+    },
+    {
+      "temparture": 35.11982299562276,
+      "userId": 1,
+      "human": 1,
+      "id": 746
+    },
+    {
+      "temparture": 30.351277416875757,
+      "userId": 1,
+      "human": 0,
+      "id": 747
+    },
+    {
+      "temparture": 36.322980615947806,
+      "userId": 1,
+      "human": 0,
+      "id": 748
+    },
+    {
+      "temparture": 30.776837230009516,
+      "userId": 1,
+      "human": 1,
+      "id": 749
+    },
+    {
+      "temparture": 32.69335605175026,
+      "userId": 1,
+      "human": 1,
+      "id": 750
+    },
+    {
+      "temparture": 31.106140712331587,
+      "userId": 1,
+      "human": 0,
+      "id": 751
+    },
+    {
+      "temparture": 35.38518176037864,
+      "userId": 1,
+      "human": 0,
+      "id": 752
+    },
+    {
+      "temparture": 33.467307288197865,
+      "userId": 1,
+      "human": 0,
+      "id": 753
+    },
+    {
+      "temparture": 33.35670134214004,
+      "userId": 1,
+      "human": 1,
+      "id": 754
+    },
+    {
+      "temparture": 35.1515002138969,
+      "userId": 1,
+      "human": 0,
+      "id": 755
+    },
+    {
+      "temparture": 38.2518519005327,
+      "userId": 1,
+      "human": 1,
+      "id": 756
+    },
+    {
+      "temparture": 36.07466009549912,
+      "userId": 1,
+      "human": 0,
+      "id": 757
+    },
+    {
+      "temparture": 37.42798112852314,
+      "userId": 1,
+      "human": 1,
+      "id": 758
+    },
+    {
+      "temparture": 36.655585736919555,
+      "userId": 1,
+      "human": 0,
+      "id": 759
+    },
+    {
+      "temparture": 39.755851079341014,
+      "userId": 1,
+      "human": 1,
+      "id": 760
+    },
+    {
+      "temparture": 37.02636696613117,
+      "userId": 1,
+      "human": 0,
+      "id": 761
+    },
+    {
+      "temparture": 32.93616942327836,
+      "userId": 1,
+      "human": 1,
+      "id": 762
+    },
+    {
+      "temparture": 39.856744007667764,
+      "userId": 1,
+      "human": 0,
+      "id": 763
+    },
+    {
+      "temparture": 35.44038964267065,
+      "userId": 1,
+      "human": 0,
+      "id": 764
+    },
+    {
+      "temparture": 34.18783187005759,
+      "userId": 1,
+      "human": 0,
+      "id": 765
+    },
+    {
+      "temparture": 39.5337442859826,
+      "userId": 1,
+      "human": 0,
+      "id": 766
+    },
+    {
+      "temparture": 31.935371422320507,
+      "userId": 1,
+      "human": 1,
+      "id": 767
+    },
+    {
+      "temparture": 32.2197175035128,
+      "userId": 1,
+      "human": 1,
+      "id": 768
+    },
+    {
+      "temparture": 36.61002202393851,
+      "userId": 1,
+      "human": 0,
+      "id": 769
+    },
+    {
+      "temparture": 33.87594099527273,
+      "userId": 1,
+      "human": 1,
+      "id": 770
+    },
+    {
+      "temparture": 32.8676784304879,
+      "userId": 1,
+      "human": 1,
+      "id": 771
+    },
+    {
+      "temparture": 39.33362619942669,
+      "userId": 1,
+      "human": 0,
+      "id": 772
+    },
+    {
+      "temparture": 30.595105939948667,
+      "userId": 1,
+      "human": 0,
+      "id": 773
+    },
+    {
+      "temparture": 33.9812733875031,
+      "userId": 1,
+      "human": 0,
+      "id": 774
+    },
+    {
+      "temparture": 37.70066696100161,
+      "userId": 1,
+      "human": 0,
+      "id": 775
+    },
+    {
+      "temparture": 34.05239529508158,
+      "userId": 1,
+      "human": 0,
+      "id": 776
+    },
+    {
+      "temparture": 31.109952745694976,
+      "userId": 1,
+      "human": 0,
+      "id": 777
+    },
+    {
+      "temparture": 33.510940821438055,
+      "userId": 1,
+      "human": 0,
+      "id": 778
+    },
+    {
+      "temparture": 39.76213863681423,
+      "userId": 1,
+      "human": 1,
+      "id": 779
+    },
+    {
+      "temparture": 35.045943716632394,
+      "userId": 1,
+      "human": 1,
+      "id": 780
+    },
+    {
+      "temparture": 37.32535770664892,
+      "userId": 1,
+      "human": 0,
+      "id": 781
+    },
+    {
+      "temparture": 34.112491537765514,
+      "userId": 1,
+      "human": 1,
+      "id": 782
+    },
+    {
+      "temparture": 38.17107050811855,
+      "userId": 1,
+      "human": 0,
+      "id": 783
+    },
+    {
+      "temparture": 38.21998387802853,
+      "userId": 1,
+      "human": 1,
+      "id": 784
+    },
+    {
+      "temparture": 36.480205343893815,
+      "userId": 1,
+      "human": 0,
+      "id": 785
+    },
+    {
+      "temparture": 32.991494744692886,
+      "userId": 1,
+      "human": 1,
+      "id": 786
+    },
+    {
+      "temparture": 35.01870492257227,
+      "userId": 1,
+      "human": 0,
+      "id": 787
+    },
+    {
+      "temparture": 37.8385749487535,
+      "human": 1,
+      "userId": 1,
+      "id": 788
+    },
+    {
+      "temparture": 36.46465155454449,
+      "human": 1,
+      "userId": 1,
+      "id": 789
+    },
+    {
+      "temparture": 31.159758662004144,
+      "human": 1,
+      "userId": 1,
+      "id": 790
+    },
+    {
+      "temparture": 31.694478325338455,
+      "human": 0,
+      "userId": 1,
+      "id": 791
+    },
+    {
+      "temparture": 36.40583843452512,
+      "human": 1,
+      "userId": 1,
+      "id": 792
+    },
+    {
+      "temparture": 32.065930692920745,
+      "human": 1,
+      "userId": 1,
+      "id": 793
+    },
+    {
+      "temparture": 30.851953214934138,
+      "human": 0,
+      "userId": 1,
+      "id": 794
+    },
+    {
+      "temparture": 38.96961249117847,
+      "human": 1,
+      "userId": 1,
+      "id": 795
+    },
+    {
+      "temparture": 30.439752303515366,
+      "human": 0,
+      "userId": 1,
+      "id": 796
+    },
+    {
+      "temparture": 39.29895943354289,
+      "human": 1,
+      "userId": 1,
+      "id": 797
+    },
+    {
+      "temparture": 30.1607879756729,
+      "human": 1,
+      "userId": 1,
+      "id": 798
+    },
+    {
+      "temparture": 39.084300918359084,
+      "human": 0,
+      "userId": 1,
+      "id": 799
+    },
+    {
+      "temparture": 37.97337014600892,
+      "human": 0,
+      "userId": 1,
+      "id": 800
+    },
+    {
+      "temparture": 37.421426499909785,
+      "human": 1,
+      "userId": 1,
+      "id": 801
+    },
+    {
+      "temparture": 37.14991935720009,
+      "human": 1,
+      "userId": 1,
+      "id": 802
+    },
+    {
+      "temparture": 35.391144769792035,
+      "human": 1,
+      "userId": 1,
+      "id": 803
+    },
+    {
+      "temparture": 33.74528885642306,
+      "human": 1,
+      "userId": 1,
+      "id": 804
+    },
+    {
+      "temparture": 35.66318639521273,
+      "human": 0,
+      "userId": 1,
+      "id": 805
+    },
+    {
+      "temparture": 38.31368466109861,
+      "human": 1,
+      "userId": 1,
+      "id": 806
+    },
+    {
+      "temparture": 32.012352208595594,
+      "human": 0,
+      "userId": 1,
+      "id": 807
+    },
+    {
+      "temparture": 31.194721534582605,
+      "human": 1,
+      "userId": 1,
+      "id": 808
+    },
+    {
+      "temparture": 35.47809869682677,
+      "human": 0,
+      "userId": 1,
+      "id": 809
+    },
+    {
+      "temparture": 33.20505152124677,
+      "human": 0,
+      "userId": 1,
+      "id": 810
+    },
+    {
+      "temparture": 37.507080616554,
+      "human": 0,
+      "userId": 1,
+      "id": 811
+    },
+    {
+      "temparture": 33.641555239673586,
+      "human": 0,
+      "userId": 1,
+      "id": 812
+    },
+    {
+      "temparture": 39.33761347911188,
+      "human": 1,
+      "userId": 1,
+      "id": 813
+    },
+    {
+      "temparture": 37.78940651703179,
+      "human": 1,
+      "userId": 1,
+      "id": 814
+    },
+    {
+      "temparture": 35.750409086121316,
+      "human": 0,
+      "userId": 1,
+      "id": 815
+    },
+    {
+      "temparture": 36.83590224735261,
+      "human": 1,
+      "userId": 1,
+      "id": 816
+    },
+    {
+      "temparture": 34.936360172606896,
+      "human": 1,
+      "userId": 1,
+      "id": 817
+    },
+    {
+      "temparture": 38.852244813630094,
+      "human": 1,
+      "userId": 1,
+      "id": 818
+    },
+    {
+      "temparture": 39.784232550199796,
+      "human": 0,
+      "userId": 1,
+      "id": 819
+    },
+    {
+      "temparture": 32.24359437966628,
+      "human": 0,
+      "userId": 1,
+      "id": 820
+    },
+    {
+      "temparture": 30.851508871723375,
+      "human": 1,
+      "userId": 1,
+      "id": 821
+    },
+    {
+      "temparture": 39.35154066014268,
+      "human": 0,
+      "userId": 1,
+      "id": 822
+    },
+    {
+      "temparture": 37.872894992158685,
+      "human": 1,
+      "userId": 1,
+      "id": 823
+    },
+    {
+      "temparture": 36.62485591673145,
+      "human": 1,
+      "userId": 1,
+      "id": 824
+    },
+    {
+      "temparture": 35.430172408643756,
+      "human": 1,
+      "userId": 1,
+      "id": 825
+    },
+    {
+      "temparture": 38.20291799793863,
+      "human": 1,
+      "userId": 1,
+      "id": 826
+    },
+    {
+      "temparture": 31.711476462118025,
+      "human": 0,
+      "userId": 1,
+      "id": 827
+    },
+    {
+      "temparture": 36.643107844296644,
+      "human": 0,
+      "userId": 1,
+      "id": 828
+    },
+    {
+      "temparture": 37.45747837781531,
+      "human": 1,
+      "userId": 1,
+      "id": 829
+    },
+    {
+      "temparture": 38.03213765202943,
+      "human": 0,
+      "userId": 1,
+      "id": 830
+    },
+    {
+      "temparture": 30.344078295176654,
+      "human": 0,
+      "userId": 1,
+      "id": 831
+    },
+    {
+      "temparture": 31.722996451585033,
+      "human": 1,
+      "userId": 1,
+      "id": 832
+    },
+    {
+      "temparture": 32.15635709902985,
+      "human": 0,
+      "userId": 1,
+      "id": 833
+    },
+    {
+      "temparture": 31.638077020883756,
+      "human": 0,
+      "userId": 1,
+      "id": 834
+    },
+    {
+      "temparture": 37.347005354664915,
+      "human": 1,
+      "userId": 1,
+      "id": 835
+    },
+    {
+      "temparture": 37.242253601633635,
+      "human": 1,
+      "userId": 1,
+      "id": 836
+    },
+    {
+      "temparture": 33.129422910275395,
+      "human": 1,
+      "userId": 1,
+      "id": 837
+    },
+    {
+      "temparture": 38.331982787520246,
+      "human": 0,
+      "userId": 1,
+      "id": 838
+    },
+    {
+      "temparture": 38.50752364377769,
+      "human": 0,
+      "userId": 1,
+      "id": 839
+    },
+    {
+      "temparture": 30.651966449219238,
+      "human": 0,
+      "userId": 1,
+      "id": 840
+    },
+    {
+      "temparture": 38.2697301035734,
+      "human": 1,
+      "userId": 1,
+      "id": 841
+    },
+    {
+      "temparture": 32.77875217300511,
+      "human": 1,
+      "userId": 1,
+      "id": 842
+    },
+    {
+      "temparture": 35.32270331781693,
+      "human": 1,
+      "userId": 1,
+      "id": 843
+    },
+    {
+      "temparture": 33.1298048477944,
+      "human": 1,
+      "userId": 1,
+      "id": 844
+    },
+    {
+      "temparture": 33.98173820687106,
+      "human": 0,
+      "userId": 1,
+      "id": 845
+    },
+    {
+      "temparture": 35.875898392467725,
+      "human": 0,
+      "userId": 1,
+      "id": 846
+    },
+    {
+      "temparture": 35.49100450985533,
+      "human": 0,
+      "userId": 1,
+      "id": 847
+    },
+    {
+      "temparture": 30.918919899966546,
+      "human": 0,
+      "userId": 1,
+      "id": 848
+    },
+    {
+      "temparture": 35.798217701774206,
+      "human": 1,
+      "userId": 1,
+      "id": 849
+    },
+    {
+      "temparture": 34.14876834331334,
+      "human": 0,
+      "userId": 1,
+      "id": 850
+    },
+    {
+      "temparture": 38.97468601638143,
+      "human": 0,
+      "userId": 1,
+      "id": 851
+    },
+    {
+      "temparture": 32.781966317728696,
+      "human": 1,
+      "userId": 1,
+      "id": 852
+    },
+    {
+      "temparture": 37.03354395130822,
+      "human": 0,
+      "userId": 1,
+      "id": 853
+    },
+    {
+      "temparture": 36.10155520525827,
+      "human": 0,
+      "userId": 1,
+      "id": 854
+    },
+    {
+      "temparture": 35.850574179149866,
+      "human": 0,
+      "userId": 1,
+      "id": 855
+    },
+    {
+      "temparture": 35.62447580871023,
+      "human": 0,
+      "userId": 1,
+      "id": 856
+    },
+    {
+      "temparture": 37.32452214343715,
+      "human": 1,
+      "userId": 1,
+      "id": 857
+    },
+    {
+      "temparture": 30.456357467455714,
+      "human": 0,
+      "userId": 1,
+      "id": 858
+    },
+    {
+      "temparture": 36.153321529363545,
+      "human": 0,
+      "userId": 1,
+      "id": 859
+    },
+    {
+      "temparture": 34.22796688596873,
+      "human": 0,
+      "userId": 1,
+      "id": 860
+    },
+    {
+      "temparture": 37.90918810339604,
+      "human": 1,
+      "userId": 1,
+      "id": 861
+    },
+    {
+      "temparture": 34.09926701545937,
+      "human": 0,
+      "userId": 1,
+      "id": 862
+    },
+    {
+      "temparture": 36.548818590065466,
+      "human": 0,
+      "userId": 1,
+      "id": 863
+    },
+    {
+      "temparture": 38.19341540004151,
+      "human": 1,
+      "userId": 1,
+      "id": 864
+    },
+    {
+      "temparture": 35.73918061351624,
+      "human": 1,
+      "userId": 1,
+      "id": 865
+    },
+    {
+      "temparture": 37.89837379373972,
+      "human": 1,
+      "userId": 1,
+      "id": 866
+    },
+    {
+      "temparture": 34.723715274357886,
+      "human": 0,
+      "userId": 1,
+      "id": 867
+    },
+    {
+      "temparture": 31.078329506789213,
+      "human": 0,
+      "userId": 1,
+      "id": 868
+    },
+    {
+      "temparture": 32.20358002523805,
+      "human": 1,
+      "userId": 1,
+      "id": 869
+    },
+    {
+      "temparture": 37.739343856871606,
+      "human": 1,
+      "userId": 1,
+      "id": 870
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 34.38388767833617,
+      "id": 871
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 30.336089298254727,
+      "id": 872
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 39.81039186010598,
+      "id": 873
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 35.06486796954277,
+      "id": 874
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 36.163749647882945,
+      "id": 875
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 32.83574759283582,
+      "id": 876
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 30.70655563318605,
+      "id": 877
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 36.24482809816896,
+      "id": 878
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 31.82365119007631,
+      "id": 879
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 33.36918196083129,
+      "id": 880
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 32.88286169920216,
+      "id": 881
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 39.97887889328464,
+      "id": 882
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 36.388417169357936,
+      "id": 883
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 31.489849538909105,
+      "id": 884
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 35.60848287504936,
+      "id": 885
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 30.20526024751898,
+      "id": 886
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 36.217062693590975,
+      "id": 887
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 39.20795247495737,
+      "id": 888
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 33.09908094610459,
+      "id": 889
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 37.64693585235792,
+      "id": 890
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 35.04242388124596,
+      "id": 891
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 37.23117348175504,
+      "id": 892
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 30.561158880616432,
+      "id": 893
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 35.31865902702416,
+      "id": 894
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 34.81303157032035,
+      "id": 895
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 36.685775291096455,
+      "id": 896
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 30.674475132103545,
+      "id": 897
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 30.582164165062203,
+      "id": 898
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 38.31991011105527,
+      "id": 899
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 39.6800724983621,
+      "id": 900
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 38.73039029370601,
+      "id": 901
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 30.94223091755429,
+      "id": 902
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 39.20586305717649,
+      "id": 903
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 33.03830515880335,
+      "id": 904
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 37.6754340915072,
+      "id": 905
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 36.73775934460641,
+      "id": 906
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 34.99638123871939,
+      "id": 907
+    },
+    {
+      "human": 1,
+      "userId": 1,
+      "temparture": 33.85490845797827,
+      "id": 908
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 39.19800247095755,
+      "id": 909
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 33.523564802181944,
+      "id": 910
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 37.57605534314839,
+      "id": 911
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 36.220328406894744,
+      "id": 912
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 32.116730336844455,
+      "id": 913
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 39.97886546947886,
+      "id": 914
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 34.93714847703632,
+      "id": 915
+    },
+    {
+      "human": 0,
+      "userId": 1,
+      "temparture": 30.99152378929989,
+      "id": 916
+    },
+    {
+      "human": 1,
+      "temparture": 36.72757721582761,
+      "userId": 1,
+      "id": 917
+    },
+    {
+      "human": 0,
+      "temparture": 31.39878684637296,
+      "userId": 1,
+      "id": 918
+    },
+    {
+      "human": 1,
+      "temparture": 39.59334429733039,
+      "userId": 1,
+      "id": 919
+    },
+    {
+      "human": 0,
+      "temparture": 34.036901841590584,
+      "userId": 1,
+      "id": 920
+    },
+    {
+      "human": 0,
+      "temparture": 39.76699754791296,
+      "userId": 1,
+      "id": 921
+    },
+    {
+      "human": 0,
+      "temparture": 36.87331504878905,
+      "userId": 1,
+      "id": 922
+    },
+    {
+      "human": 1,
+      "temparture": 31.007798821138138,
+      "userId": 1,
+      "id": 923
+    },
+    {
+      "human": 1,
+      "temparture": 37.20652300832528,
+      "userId": 1,
+      "id": 924
+    },
+    {
+      "human": 0,
+      "temparture": 30.4905587319935,
+      "userId": 1,
+      "id": 925
+    },
+    {
+      "human": 1,
+      "temparture": 34.35884039857466,
+      "userId": 1,
+      "id": 926
+    },
+    {
+      "human": 0,
+      "temparture": 37.114772529657586,
+      "userId": 1,
+      "id": 927
+    },
+    {
+      "human": 1,
+      "temparture": 30.001208384649622,
+      "userId": 1,
+      "id": 928
+    },
+    {
+      "human": 0,
+      "temparture": 36.03077665557087,
+      "userId": 1,
+      "id": 929
+    },
+    {
+      "human": 1,
+      "temparture": 31.279785545592237,
+      "userId": 1,
+      "id": 930
+    },
+    {
+      "human": 1,
+      "temparture": 30.350550281471193,
+      "userId": 1,
+      "id": 931
+    },
+    {
+      "human": 0,
+      "temparture": 32.53068649276264,
+      "userId": 1,
+      "id": 932
+    },
+    {
+      "human": 1,
+      "temparture": 38.907567945675005,
+      "userId": 1,
+      "id": 933
+    },
+    {
+      "human": 1,
+      "temparture": 34.06244498630135,
+      "userId": 1,
+      "id": 934
+    },
+    {
+      "human": 1,
+      "temparture": 39.62849976179142,
+      "userId": 1,
+      "id": 935
+    },
+    {
+      "human": 0,
+      "temparture": 39.91365275408339,
+      "userId": 1,
+      "id": 936
+    },
+    {
+      "human": 1,
+      "temparture": 39.25278447552051,
+      "userId": 1,
+      "id": 937
+    },
+    {
+      "human": 0,
+      "temparture": 39.34980247345363,
+      "userId": 1,
+      "id": 938
+    },
+    {
+      "human": 1,
+      "temparture": 36.891022785952,
+      "userId": 1,
+      "id": 939
+    },
+    {
+      "human": 1,
+      "temparture": 32.49483880568146,
+      "userId": 1,
+      "id": 940
+    },
+    {
+      "human": 1,
+      "temparture": 32.47079493470404,
+      "userId": 1,
+      "id": 941
+    },
+    {
+      "human": 1,
+      "temparture": 34.9438765817417,
+      "userId": 1,
+      "id": 942
+    },
+    {
+      "human": 1,
+      "temparture": 38.116738834987515,
+      "userId": 1,
+      "id": 943
+    },
+    {
+      "human": 1,
+      "temparture": 34.46135888599722,
+      "userId": 1,
+      "id": 944
+    },
+    {
+      "human": 0,
+      "temparture": 31.732897827222214,
+      "userId": 1,
+      "id": 945
+    },
+    {
+      "human": 0,
+      "temparture": 34.80036854096467,
+      "userId": 1,
+      "id": 946
+    },
+    {
+      "human": 0,
+      "temparture": 38.09131162814649,
+      "userId": 1,
+      "id": 947
+    },
+    {
+      "human": 0,
+      "temparture": 34.59594471993171,
+      "userId": 1,
+      "id": 948
+    },
+    {
+      "human": 1,
+      "temparture": 30.127128068448567,
+      "userId": 1,
+      "id": 949
+    },
+    {
+      "human": 1,
+      "temparture": 37.20657656698303,
+      "userId": 1,
+      "id": 950
+    },
+    {
+      "human": 0,
+      "temparture": 34.457136699389544,
+      "userId": 1,
+      "id": 951
+    },
+    {
+      "human": 0,
+      "temparture": 39.62504757861238,
+      "userId": 1,
+      "id": 952
+    },
+    {
+      "human": 1,
+      "temparture": 33.686952637704294,
+      "userId": 1,
+      "id": 953
+    },
+    {
+      "human": 0,
+      "temparture": 39.9998525417079,
+      "userId": 1,
+      "id": 954
+    },
+    {
+      "human": 0,
+      "temparture": 35.50049903306339,
+      "userId": 1,
+      "id": 955
+    },
+    {
+      "human": 1,
+      "temparture": 33.38447879336243,
+      "userId": 1,
+      "id": 956
+    },
+    {
+      "human": 0,
+      "temparture": 37.50607817331816,
+      "userId": 1,
+      "id": 957
+    },
+    {
+      "human": 0,
+      "temparture": 35.19187284728969,
+      "userId": 1,
+      "id": 958
+    },
+    {
+      "human": 0,
+      "temparture": 36.92917046621025,
+      "userId": 1,
+      "id": 959
+    },
+    {
+      "human": 1,
+      "temparture": 38.57617768817738,
+      "userId": 1,
+      "id": 960
+    },
+    {
+      "human": 0,
+      "temparture": 39.77549398684323,
+      "userId": 1,
+      "id": 961
+    },
+    {
+      "human": 1,
+      "temparture": 32.60687010844299,
+      "userId": 1,
+      "id": 962
+    },
+    {
+      "human": 0,
+      "temparture": 34.402260478004266,
+      "userId": 1,
+      "id": 963
+    },
+    {
+      "human": 0,
+      "temparture": 35.33898128660778,
+      "userId": 1,
+      "id": 964
+    },
+    {
+      "human": 1,
+      "temparture": 37.76464596007389,
+      "userId": 1,
+      "id": 965
+    },
+    {
+      "human": 0,
+      "temparture": 31.931359973893414,
+      "userId": 1,
+      "id": 966
+    },
+    {
+      "human": 0,
+      "temparture": 34.69266654421191,
+      "userId": 1,
+      "id": 967
+    },
+    {
+      "human": 0,
+      "temparture": 37.17234325012272,
+      "userId": 1,
+      "id": 968
+    },
+    {
+      "human": 1,
+      "temparture": 34.9898144125279,
+      "userId": 1,
+      "id": 969
+    },
+    {
+      "human": 1,
+      "temparture": 32.20126781783342,
+      "userId": 1,
+      "id": 970
+    },
+    {
+      "human": 1,
+      "temparture": 34.722345433422724,
+      "userId": 1,
+      "id": 971
+    },
+    {
+      "human": 0,
+      "temparture": 39.954987247019176,
+      "userId": 1,
+      "id": 972
+    },
+    {
+      "human": 1,
+      "temparture": 37.072409040676504,
+      "userId": 1,
+      "id": 973
+    },
+    {
+      "human": 0,
+      "temparture": 38.75552776115906,
+      "userId": 1,
+      "id": 974
+    },
+    {
+      "human": 1,
+      "temparture": 32.13957526945001,
+      "userId": 1,
+      "id": 975
+    },
+    {
+      "human": 1,
+      "temparture": 31.23540793823083,
+      "userId": 1,
+      "id": 976
+    },
+    {
+      "human": 1,
+      "temparture": 30.041018588688154,
+      "userId": 1,
+      "id": 977
+    },
+    {
+      "human": 1,
+      "temparture": 38.73008545401707,
+      "userId": 1,
+      "id": 978
+    },
+    {
+      "human": 0,
+      "temparture": 37.08526109694446,
+      "userId": 1,
+      "id": 979
+    },
+    {
+      "human": 1,
+      "temparture": 37.47354462354836,
+      "userId": 1,
+      "id": 980
+    },
+    {
+      "human": 0,
+      "temparture": 33.59281511503357,
+      "userId": 1,
+      "id": 981
+    },
+    {
+      "human": 0,
+      "temparture": 37.46474513597309,
+      "userId": 1,
+      "id": 982
+    },
+    {
+      "human": 0,
+      "temparture": 36.84478423972465,
+      "userId": 1,
+      "id": 983
+    },
+    {
+      "human": 1,
+      "temparture": 32.24882342160269,
+      "userId": 1,
+      "id": 984
+    },
+    {
+      "human": 0,
+      "temparture": 30.968912859468517,
+      "userId": 1,
+      "id": 985
+    },
+    {
+      "human": 0,
+      "temparture": 37.010768842407934,
+      "userId": 1,
+      "id": 986
+    },
+    {
+      "human": 0,
+      "temparture": 33.60129715890885,
+      "userId": 1,
+      "id": 987
+    },
+    {
+      "human": 1,
+      "temparture": 30.11000998178085,
+      "userId": 1,
+      "id": 988
+    },
+    {
+      "human": 0,
+      "temparture": 34.23017069573099,
+      "userId": 1,
+      "id": 989
+    },
+    {
+      "human": 1,
+      "temparture": 32.84381898629393,
+      "userId": 1,
+      "id": 990
+    },
+    {
+      "human": 1,
+      "temparture": 30.210955503233713,
+      "userId": 1,
+      "id": 991
+    },
+    {
+      "human": 0,
+      "temparture": 37.22195169619159,
+      "userId": 1,
+      "id": 992
+    },
+    {
+      "human": 1,
+      "temparture": 38.57750132773029,
+      "userId": 1,
+      "id": 993
+    },
+    {
+      "human": 0,
+      "temparture": 35.863902142843656,
+      "userId": 1,
+      "id": 994
+    },
+    {
+      "human": 1,
+      "temparture": 30.476682381409894,
+      "userId": 1,
+      "id": 995
+    },
+    {
+      "human": 1,
+      "temparture": 34.17094368148109,
+      "userId": 1,
+      "id": 996
+    },
+    {
+      "human": 1,
+      "temparture": 30.95584801499289,
+      "userId": 1,
+      "id": 997
+    },
+    {
+      "human": 1,
+      "temparture": 34.89558852052397,
+      "userId": 1,
+      "id": 998
+    },
+    {
+      "human": 1,
+      "temparture": 34.24839147764584,
+      "userId": 1,
+      "id": 999
+    },
+    {
+      "human": 0,
+      "temparture": 31.530435484729708,
+      "userId": 1,
+      "id": 1000
+    },
+    {
+      "human": 0,
+      "temparture": 30.814082594892213,
+      "userId": 1,
+      "id": 1001
+    },
+    {
+      "human": 0,
+      "temparture": 33.25163750822862,
+      "userId": 1,
+      "id": 1002
+    },
+    {
+      "human": 0,
+      "temparture": 38.402694019982505,
+      "userId": 1,
+      "id": 1003
+    },
+    {
+      "human": 1,
+      "temparture": 30.572332182132335,
+      "userId": 1,
+      "id": 1004
+    },
+    {
+      "human": 0,
+      "temparture": 31.619679065254306,
+      "userId": 1,
+      "id": 1005
+    },
+    {
+      "human": 1,
+      "temparture": 30.77401382951992,
+      "userId": 1,
+      "id": 1006
+    },
+    {
+      "human": 1,
+      "temparture": 34.62777258302572,
+      "userId": 1,
+      "id": 1007
+    },
+    {
+      "human": 1,
+      "temparture": 35.29373096427813,
+      "userId": 1,
+      "id": 1008
+    },
+    {
+      "human": 0,
+      "temparture": 36.23037158303873,
+      "userId": 1,
+      "id": 1009
+    },
+    {
+      "human": 1,
+      "temparture": 32.12569769992204,
+      "userId": 1,
+      "id": 1010
+    },
+    {
+      "human": 1,
+      "temparture": 34.60935036740349,
+      "userId": 1,
+      "id": 1011
+    },
+    {
+      "human": 1,
+      "temparture": 36.352928474488785,
+      "userId": 1,
+      "id": 1012
+    },
+    {
+      "human": 1,
+      "temparture": 38.40884701302115,
+      "userId": 1,
+      "id": 1013
+    },
+    {
+      "human": 0,
+      "temparture": 31.125552099832042,
+      "userId": 1,
+      "id": 1014
+    },
+    {
+      "human": 1,
+      "temparture": 30.1224564574051,
+      "userId": 1,
+      "id": 1015
+    },
+    {
+      "human": 0,
+      "temparture": 39.44907700224754,
+      "userId": 1,
+      "id": 1016
     }
   ]
 }

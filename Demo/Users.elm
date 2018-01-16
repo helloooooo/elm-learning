@@ -1,3 +1,4 @@
+module Demo.Users exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (href,style)
 import Html.Events exposing (onClick)
@@ -27,24 +28,6 @@ import Svg exposing (Svg)
 import Svg.Attributes exposing (..)
 import Plot exposing (..)
 
-
-
-main =
-  Navigation.program MsgUrlChange
-    { init = init
-    , view = view
-    , update = update
-    , subscriptions = subscriptions
-    }
-
-
-init : Navigation.Location -> ( Model, Cmd Msg )
-init location =  -- ***MDL-2: Boilerplate: Always use this initial Mdl model store.
-  ( Model Nothing (Url.parsePath route location) [] initData initData False Material.model
-  , Cmd.none
-  )
-
-initData = [Data 2 2,Data 2 2,Data 2 2,Data 2 2,Data 2 2]
 
 -- MODEL
 
@@ -92,7 +75,6 @@ route =
     , Url.map RouteUserDetail (Url.s "users" </> int)
     , Url.map RouteMain (Url.s "Main.elm")
     ]
-
 
 
 -- UPDATE
@@ -277,24 +259,22 @@ type alias Mdl = -- ***MDL-6
 -- VIEW
 view : Model -> Html Msg
 view model =
-  Layout.render Mdl model.mdl
-  [ Layout.fixedHeader
-  ]
-  { header = [ h1 [] [text "Life support User Manger"] ]
-  , drawer = [ ]
-  , tabs = ([] ,[])
-  , main = [
-    ul [] (List.map (viewLink model) [ "/","/users/"])
-    , div [] [ viewRoute model ] 
-    ] 
-  }
-  -- div []
-  --   [ h1 [  ] [ text "Life Support User Manager" ]
-  --   , ul [] (List.map (viewLink model) [ "/","/users/"])
-  --   , div [] [ viewRoute model ] 
-  --   ]
-    |>Material.Scheme.topWithScheme Color.Teal Color.Indigo
 
+  div []
+    [ h1 [ Html.Attribute.style.header ] [ text "Life Support User Manager" ]
+    , ul [] (List.map (viewLink model) [ "/","/users/"])
+    , div [] [ viewRoute model ]
+    ]
+    |>Material.Scheme.topWithScheme Color.Teal Color.Indigo
+  -- Layout.render Mdl model.mdl
+  -- [ Layout.fixedHeader
+  -- ]
+  -- { header = [ h1 [] [text "Life support User Manger"] ]
+  -- , drawer = [ ]
+  -- , tabs = ((List.map (viewLink model) [ "/","/users/" ]) ,[])
+  -- , main = [ ] 
+  -- }
+  |> Material.Scheme.topWithScheme Color.Teal Color.Indigo
 
 
 viewLink : Model -> String -> Html Msg   -- ***MDL-8
@@ -343,7 +323,8 @@ viewPage route model =
 
     RouteUserDetail id ->
       div []
-        [ ul [] (List.map viewUsers model.users )
+        [ h2 [] [text "ブログ記事表示"]
+        , ul [] (List.map viewUsers model.users )
         , ul [] [changeButtons model]
         ,viewgraph  model
         ]
@@ -360,9 +341,15 @@ white =
   Color.text Color.white 
 
 
+-- increaseButton : List Data -> Html Msg
+-- increaseButton data =
+--     div []
+--         [ button [ onClick (Increase (Data (List.length data + 1 |> toFloat ) 1 )) ] [ text "Add Data" ]
+--         ]
+
 changeButtons : Model ->  Html Msg
 changeButtons model = 
-  div [Html.Attributes.style [("padding","10px"), ("margin","10px")]] [
+  div [] [
   Button.render Mdl [0] model.mdl
   [ Button.raised
   , Button.colored
@@ -370,7 +357,7 @@ changeButtons model =
   ]
   [ text "Temparture"]
   ,
-  Button.render Mdl [0] model.mdl
+    Button.render Mdl [0] model.mdl
   [ Button.raised
   , Button.colored
   , Options.onClick Msghuman
@@ -381,23 +368,16 @@ changeButtons model =
 
 
 
-
 viewgraph : Model -> Html msg
 viewgraph model = 
     if model.graphtoggle then
-      div [ Html.Attributes.style [("padding","10px"), ("margin","10px"),("width","800px")] ]
-      [
         viewSeries
         [ line (List.map (\{ x, y } -> circle x y)) ]
         model.tempdatas
-      ]
     else 
-      div [ Html.Attributes.style [("padding","10px"), ("margin","10px"),("width","800px")] ]
-      [ 
         viewSeries
         [ line (List.map (\{ x, y } -> circle x y)) ]
         model.humandatas
-      ]
   
 viewUsers a = 
   let 
@@ -419,10 +399,13 @@ viewUsers a =
             , Color.background (Color.color Color.Red Color.S500)
             ,Options.onClick (MsgNewUrl url)
             ]
-            [ Card.title [] [ Card.head [ white ] [ text  a.name  ] ]
+            [ Card.title [] [ Card.head [ white ] [ text (toString a.id ) ] ]
             , Card.text [ white ] [ text <| a.name ]
             ]
         ]
+        -- ,viewSeries
+        -- [ line (List.map (\{ x, y } -> circle x y)) ]
+        -- d
     ]
 
 
@@ -438,10 +421,10 @@ viewUsers a =
         [
           Card.view
             [ css "width" "800px"
-            , Color.background (Color.color Color.Amber Color.S500)
+            , Color.background (Color.color Color.Yellow Color.S500)
             ,Options.onClick (MsgNewUrl url)
             ]
-            [ Card.title [] [ Card.head [ white ] [ text  a.name  ] ]
+            [ Card.title [] [ Card.head [ white ] [ text (toString a.id ) ] ]
             , Card.text [ white ] [ text <| a.name ]
             ]
         ]
@@ -461,7 +444,7 @@ viewUsers a =
             , Color.background (Color.color Color.Green Color.S500)
             ,Options.onClick (MsgNewUrl url)
             ]
-            [ Card.title [] [ Card.head [ white ] [ text  a.name ] ]
+            [ Card.title [] [ Card.head [ white ] [ text (toString a.id ) ] ]
             , Card.text [ white ] [ text <| a.name ]
             ]
         ]

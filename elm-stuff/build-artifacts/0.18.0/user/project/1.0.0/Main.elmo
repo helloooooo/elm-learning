@@ -1,23 +1,83 @@
-var _user$project$Main$viewgraph = function (datas) {
-	return A2(
-		_terezka$elm_plot$Plot$viewSeries,
+var _user$project$Main$viewgraph = function (model) {
+	return model.graphtoggle ? A2(
+		_elm_lang$html$Html$div,
 		{
 			ctor: '::',
-			_0: _terezka$elm_plot$Plot$line(
-				_elm_lang$core$List$map(
-					function (_p0) {
-						var _p1 = _p0;
-						return A2(_terezka$elm_plot$Plot$circle, _p1.x, _p1.y);
-					})),
+			_0: _elm_lang$html$Html_Attributes$style(
+				{
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'padding', _1: '10px'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'margin', _1: '10px'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'width', _1: '800px'},
+							_1: {ctor: '[]'}
+						}
+					}
+				}),
 			_1: {ctor: '[]'}
 		},
-		datas);
+		{
+			ctor: '::',
+			_0: A2(
+				_terezka$elm_plot$Plot$viewSeries,
+				{
+					ctor: '::',
+					_0: _terezka$elm_plot$Plot$line(
+						_elm_lang$core$List$map(
+							function (_p0) {
+								var _p1 = _p0;
+								return A2(_terezka$elm_plot$Plot$circle, _p1.x, _p1.y);
+							})),
+					_1: {ctor: '[]'}
+				},
+				model.tempdatas),
+			_1: {ctor: '[]'}
+		}) : A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$style(
+				{
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'padding', _1: '10px'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'margin', _1: '10px'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'width', _1: '800px'},
+							_1: {ctor: '[]'}
+						}
+					}
+				}),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_terezka$elm_plot$Plot$viewSeries,
+				{
+					ctor: '::',
+					_0: _terezka$elm_plot$Plot$line(
+						_elm_lang$core$List$map(
+							function (_p2) {
+								var _p3 = _p2;
+								return A2(_terezka$elm_plot$Plot$circle, _p3.x, _p3.y);
+							})),
+					_1: {ctor: '[]'}
+				},
+				model.humandatas),
+			_1: {ctor: '[]'}
+		});
 };
 var _user$project$Main$white = _debois$elm_mdl$Material_Color$text(_debois$elm_mdl$Material_Color$white);
 var _user$project$Main$createGetApiCommand = function (user) {
-	var _p2 = user;
-	if (_p2.ctor === 'Just') {
-		return _p2._0.id;
+	var _p4 = user;
+	if (_p4.ctor === 'Just') {
+		return _p4._0.id;
 	} else {
 		return 1;
 	}
@@ -44,9 +104,9 @@ var _user$project$Main$user = A4(
 	A2(_elm_lang$core$Json_Decode$field, 'name', _elm_lang$core$Json_Decode$string),
 	A2(_elm_lang$core$Json_Decode$field, 'status', _elm_lang$core$Json_Decode$string));
 var _user$project$Main$unwrapDatax = function (mdata) {
-	var _p3 = mdata;
-	if (_p3.ctor === 'Just') {
-		return _p3._0.x;
+	var _p5 = mdata;
+	if (_p5.ctor === 'Just') {
+		return _p5._0.x;
 	} else {
 		return 0;
 	}
@@ -97,49 +157,6 @@ var _user$project$Main$initData = {
 };
 var _user$project$Main$createTempData = F2(
 	function (newdata, datas) {
-		var _p4 = newdata;
-		if (_p4.ctor === 'Just') {
-			var _p5 = _p4._0;
-			return (_elm_lang$core$Native_Utils.cmp(
-				_elm_lang$core$List$length(datas),
-				5) < 0) ? A2(
-				_elm_lang$core$List$append,
-				datas,
-				{
-					ctor: '::',
-					_0: A2(
-						_user$project$Main$Data,
-						_user$project$Main$unwrapDatax(
-							_elm_lang$core$List$head(
-								_elm_lang$core$List$reverse(datas))) + 1.0,
-						_p5.temparture),
-					_1: {ctor: '[]'}
-				}) : A2(
-				_elm_lang$core$List$drop,
-				1,
-				A2(
-					_elm_lang$core$List$append,
-					datas,
-					{
-						ctor: '::',
-						_0: A2(
-							_user$project$Main$Data,
-							_user$project$Main$unwrapDatax(
-								_elm_lang$core$List$head(
-									_elm_lang$core$List$reverse(datas))) + 1.0,
-							_p5.temparture),
-						_1: {ctor: '[]'}
-					}));
-		} else {
-			return {
-				ctor: '::',
-				_0: A2(_user$project$Main$Data, 1, 1),
-				_1: {ctor: '[]'}
-			};
-		}
-	});
-var _user$project$Main$createHumanData = F2(
-	function (newdata, datas) {
 		var _p6 = newdata;
 		if (_p6.ctor === 'Just') {
 			var _p7 = _p6._0;
@@ -155,7 +172,7 @@ var _user$project$Main$createHumanData = F2(
 						_user$project$Main$unwrapDatax(
 							_elm_lang$core$List$head(
 								_elm_lang$core$List$reverse(datas))) + 1.0,
-						_p7.human),
+						_p7.temparture),
 					_1: {ctor: '[]'}
 				}) : A2(
 				_elm_lang$core$List$drop,
@@ -170,7 +187,50 @@ var _user$project$Main$createHumanData = F2(
 							_user$project$Main$unwrapDatax(
 								_elm_lang$core$List$head(
 									_elm_lang$core$List$reverse(datas))) + 1.0,
-							_p7.human),
+							_p7.temparture),
+						_1: {ctor: '[]'}
+					}));
+		} else {
+			return {
+				ctor: '::',
+				_0: A2(_user$project$Main$Data, 1, 1),
+				_1: {ctor: '[]'}
+			};
+		}
+	});
+var _user$project$Main$createHumanData = F2(
+	function (newdata, datas) {
+		var _p8 = newdata;
+		if (_p8.ctor === 'Just') {
+			var _p9 = _p8._0;
+			return (_elm_lang$core$Native_Utils.cmp(
+				_elm_lang$core$List$length(datas),
+				5) < 0) ? A2(
+				_elm_lang$core$List$append,
+				datas,
+				{
+					ctor: '::',
+					_0: A2(
+						_user$project$Main$Data,
+						_user$project$Main$unwrapDatax(
+							_elm_lang$core$List$head(
+								_elm_lang$core$List$reverse(datas))) + 1.0,
+						_p9.human),
+					_1: {ctor: '[]'}
+				}) : A2(
+				_elm_lang$core$List$drop,
+				1,
+				A2(
+					_elm_lang$core$List$append,
+					datas,
+					{
+						ctor: '::',
+						_0: A2(
+							_user$project$Main$Data,
+							_user$project$Main$unwrapDatax(
+								_elm_lang$core$List$head(
+									_elm_lang$core$List$reverse(datas))) + 1.0,
+							_p9.human),
 						_1: {ctor: '[]'}
 					}));
 		} else {
@@ -185,9 +245,9 @@ var _user$project$Main$User = F3(
 	function (a, b, c) {
 		return {id: a, name: b, status: c};
 	});
-var _user$project$Main$Model = F6(
-	function (a, b, c, d, e, f) {
-		return {loading: a, page: b, users: c, humandatas: d, tempdatas: e, mdl: f};
+var _user$project$Main$Model = F7(
+	function (a, b, c, d, e, f, g) {
+		return {loading: a, page: b, users: c, humandatas: d, tempdatas: e, graphtoggle: f, mdl: g};
 	});
 var _user$project$Main$RouteMain = {ctor: 'RouteMain'};
 var _user$project$Main$RouteUserDetail = function (a) {
@@ -228,19 +288,101 @@ var _user$project$Main$route = _evancz$url_parser$UrlParser$oneOf(
 var _user$project$Main$init = function (location) {
 	return {
 		ctor: '_Tuple2',
-		_0: A6(
+		_0: A7(
 			_user$project$Main$Model,
 			_elm_lang$core$Maybe$Nothing,
 			A2(_evancz$url_parser$UrlParser$parsePath, _user$project$Main$route, location),
 			{ctor: '[]'},
 			_user$project$Main$initData,
 			_user$project$Main$initData,
+			false,
 			_debois$elm_mdl$Material$model),
 		_1: _elm_lang$core$Platform_Cmd$none
 	};
 };
 var _user$project$Main$Mdl = function (a) {
 	return {ctor: 'Mdl', _0: a};
+};
+var _user$project$Main$Msghuman = {ctor: 'Msghuman'};
+var _user$project$Main$MsgTemp = {ctor: 'MsgTemp'};
+var _user$project$Main$changeButtons = function (model) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$style(
+				{
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'padding', _1: '10px'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'margin', _1: '10px'},
+						_1: {ctor: '[]'}
+					}
+				}),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A5(
+				_debois$elm_mdl$Material_Button$render,
+				_user$project$Main$Mdl,
+				{
+					ctor: '::',
+					_0: 0,
+					_1: {ctor: '[]'}
+				},
+				model.mdl,
+				{
+					ctor: '::',
+					_0: _debois$elm_mdl$Material_Button$raised,
+					_1: {
+						ctor: '::',
+						_0: _debois$elm_mdl$Material_Button$colored,
+						_1: {
+							ctor: '::',
+							_0: _debois$elm_mdl$Material_Options$onClick(_user$project$Main$MsgTemp),
+							_1: {ctor: '[]'}
+						}
+					}
+				},
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html$text('Temparture'),
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: A5(
+					_debois$elm_mdl$Material_Button$render,
+					_user$project$Main$Mdl,
+					{
+						ctor: '::',
+						_0: 0,
+						_1: {ctor: '[]'}
+					},
+					model.mdl,
+					{
+						ctor: '::',
+						_0: _debois$elm_mdl$Material_Button$raised,
+						_1: {
+							ctor: '::',
+							_0: _debois$elm_mdl$Material_Button$colored,
+							_1: {
+								ctor: '::',
+								_0: _debois$elm_mdl$Material_Options$onClick(_user$project$Main$Msghuman),
+								_1: {ctor: '[]'}
+							}
+						}
+					},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text('Human'),
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			}
+		});
 };
 var _user$project$Main$MsgUnti = function (a) {
 	return {ctor: 'MsgUnti', _0: a};
@@ -249,7 +391,7 @@ var _user$project$Main$subscriptions = function (model) {
 	return A2(
 		_elm_lang$core$Time$every,
 		_elm_lang$core$Time$second,
-		function (_p8) {
+		function (_p10) {
 			return _user$project$Main$MsgUnti(
 				_elm_lang$core$List$head(model.users));
 		});
@@ -285,20 +427,20 @@ var _user$project$Main$MsgNewUsers = function (a) {
 var _user$project$Main$getUsers = A2(_elm_lang$http$Http$send, _user$project$Main$MsgNewUsers, _user$project$Main$requestUsers);
 var _user$project$Main$update = F2(
 	function (msg, model) {
-		var _p9 = msg;
-		switch (_p9.ctor) {
+		var _p11 = msg;
+		switch (_p11.ctor) {
 			case 'MsgNewUrl':
 				return {
 					ctor: '_Tuple2',
 					_0: model,
-					_1: _elm_lang$navigation$Navigation$newUrl(_p9._0)
+					_1: _elm_lang$navigation$Navigation$newUrl(_p11._0)
 				};
 			case 'MsgUrlChange':
-				var _p12 = _p9._0;
-				var newpage = A2(_evancz$url_parser$UrlParser$parsePath, _user$project$Main$route, _p12);
-				var _p10 = A2(_elm_lang$core$Debug$log, 'location=', _p12);
-				var _p11 = newpage;
-				if (_p11.ctor === 'Nothing') {
+				var _p14 = _p11._0;
+				var newpage = A2(_evancz$url_parser$UrlParser$parsePath, _user$project$Main$route, _p14);
+				var _p12 = A2(_elm_lang$core$Debug$log, 'location=', _p14);
+				var _p13 = newpage;
+				if (_p13.ctor === 'Nothing') {
 					return {
 						ctor: '_Tuple2',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -307,7 +449,7 @@ var _user$project$Main$update = F2(
 						_1: _elm_lang$core$Platform_Cmd$none
 					};
 				} else {
-					switch (_p11._0.ctor) {
+					switch (_p13._0.ctor) {
 						case 'RouteHome':
 							return {
 								ctor: '_Tuple2',
@@ -330,7 +472,7 @@ var _user$project$Main$update = F2(
 								_0: _elm_lang$core$Native_Utils.update(
 									model,
 									{loading: newpage}),
-								_1: _user$project$Main$getUserDetail(_p11._0._0)
+								_1: _user$project$Main$getUserDetail(_p13._0._0)
 							};
 						default:
 							return {
@@ -343,19 +485,19 @@ var _user$project$Main$update = F2(
 					}
 				}
 			case 'MsgNewUsers':
-				if (_p9._0.ctor === 'Ok') {
+				if (_p11._0.ctor === 'Ok') {
 					return {
 						ctor: '_Tuple2',
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
-							{page: model.loading, users: _p9._0._0}),
+							{page: model.loading, users: _p11._0._0}),
 						_1: _elm_lang$core$Platform_Cmd$none
 					};
 				} else {
 					return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 				}
 			case 'MsgNewUserDetail':
-				if (_p9._0.ctor === 'Ok') {
+				if (_p11._0.ctor === 'Ok') {
 					return {
 						ctor: '_Tuple2',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -364,7 +506,7 @@ var _user$project$Main$update = F2(
 								page: model.loading,
 								users: {
 									ctor: '::',
-									_0: _p9._0._0,
+									_0: _p11._0._0,
 									_1: {ctor: '[]'}
 								},
 								humandatas: {ctor: '[]'},
@@ -402,11 +544,27 @@ var _user$project$Main$update = F2(
 						model,
 						{loading: model.loading}),
 					_1: _user$project$Main$getApiData(
-						_user$project$Main$createGetApiCommand(_p9._0))
+						_user$project$Main$createGetApiCommand(_p11._0))
+				};
+			case 'MsgTemp':
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{graphtoggle: true}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+			case 'Msghuman':
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{graphtoggle: false}),
+					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			case 'MsgNewApiData':
-				if (_p9._0.ctor === 'Ok') {
-					var _p13 = _p9._0._0;
+				if (_p11._0.ctor === 'Ok') {
+					var _p15 = _p11._0._0;
 					return {
 						ctor: '_Tuple2',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -415,11 +573,11 @@ var _user$project$Main$update = F2(
 								page: model.loading,
 								humandatas: A2(
 									_user$project$Main$createHumanData,
-									_elm_lang$core$List$head(_p13),
+									_elm_lang$core$List$head(_p15),
 									model.humandatas),
 								tempdatas: A2(
 									_user$project$Main$createTempData,
-									_elm_lang$core$List$head(_p13),
+									_elm_lang$core$List$head(_p15),
 									model.tempdatas)
 							}),
 						_1: _elm_lang$core$Platform_Cmd$none
@@ -428,7 +586,7 @@ var _user$project$Main$update = F2(
 					return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 				}
 			default:
-				return A3(_debois$elm_mdl$Material$update, _user$project$Main$Mdl, _p9._0, model);
+				return A3(_debois$elm_mdl$Material$update, _user$project$Main$Mdl, _p11._0, model);
 		}
 	});
 var _user$project$Main$MsgUrlChange = function (a) {
@@ -489,8 +647,8 @@ var _user$project$Main$viewUsers = function (a) {
 		_elm_lang$core$Basics_ops['++'],
 		'/users/',
 		_elm_lang$core$Basics$toString(a.id));
-	var _p14 = a.status;
-	switch (_p14) {
+	var _p16 = a.status;
+	switch (_p16) {
 		case 'red':
 			return A2(
 				_elm_lang$html$Html$div,
@@ -560,8 +718,7 @@ var _user$project$Main$viewUsers = function (a) {
 												},
 												{
 													ctor: '::',
-													_0: _elm_lang$html$Html$text(
-														_elm_lang$core$Basics$toString(a.id)),
+													_0: _elm_lang$html$Html$text(a.name),
 													_1: {ctor: '[]'}
 												}),
 											_1: {ctor: '[]'}
@@ -631,7 +788,7 @@ var _user$project$Main$viewUsers = function (a) {
 									_1: {
 										ctor: '::',
 										_0: _debois$elm_mdl$Material_Color$background(
-											A2(_debois$elm_mdl$Material_Color$color, _debois$elm_mdl$Material_Color$Yellow, _debois$elm_mdl$Material_Color$S500)),
+											A2(_debois$elm_mdl$Material_Color$color, _debois$elm_mdl$Material_Color$Amber, _debois$elm_mdl$Material_Color$S500)),
 										_1: {
 											ctor: '::',
 											_0: _debois$elm_mdl$Material_Options$onClick(
@@ -656,8 +813,7 @@ var _user$project$Main$viewUsers = function (a) {
 												},
 												{
 													ctor: '::',
-													_0: _elm_lang$html$Html$text(
-														_elm_lang$core$Basics$toString(a.id)),
+													_0: _elm_lang$html$Html$text(a.name),
 													_1: {ctor: '[]'}
 												}),
 											_1: {ctor: '[]'}
@@ -752,8 +908,7 @@ var _user$project$Main$viewUsers = function (a) {
 												},
 												{
 													ctor: '::',
-													_0: _elm_lang$html$Html$text(
-														_elm_lang$core$Basics$toString(a.id)),
+													_0: _elm_lang$html$Html$text(a.name),
 													_1: {ctor: '[]'}
 												}),
 											_1: {ctor: '[]'}
@@ -783,8 +938,8 @@ var _user$project$Main$viewUsers = function (a) {
 };
 var _user$project$Main$viewPage = F2(
 	function (route, model) {
-		var _p15 = route;
-		switch (_p15.ctor) {
+		var _p17 = route;
+		switch (_p17.ctor) {
 			case 'RouteHome':
 				return A2(
 					_elm_lang$html$Html$div,
@@ -842,35 +997,23 @@ var _user$project$Main$viewPage = F2(
 					{
 						ctor: '::',
 						_0: A2(
-							_elm_lang$html$Html$h2,
+							_elm_lang$html$Html$ul,
 							{ctor: '[]'},
-							{
-								ctor: '::',
-								_0: _elm_lang$html$Html$text('ブログ記事表示'),
-								_1: {ctor: '[]'}
-							}),
+							A2(_elm_lang$core$List$map, _user$project$Main$viewUsers, model.users)),
 						_1: {
 							ctor: '::',
 							_0: A2(
 								_elm_lang$html$Html$ul,
 								{ctor: '[]'},
-								A2(_elm_lang$core$List$map, _user$project$Main$viewUsers, model.users)),
+								{
+									ctor: '::',
+									_0: _user$project$Main$changeButtons(model),
+									_1: {ctor: '[]'}
+								}),
 							_1: {
 								ctor: '::',
-								_0: A2(
-									_elm_lang$html$Html$h2,
-									{ctor: '[]'},
-									{
-										ctor: '::',
-										_0: _elm_lang$html$Html$text(
-											_elm_lang$core$Basics$toString(model.tempdatas)),
-										_1: {ctor: '[]'}
-									}),
-								_1: {
-									ctor: '::',
-									_0: _user$project$Main$viewgraph(model.tempdatas),
-									_1: {ctor: '[]'}
-								}
+								_0: _user$project$Main$viewgraph(model),
+								_1: {ctor: '[]'}
 							}
 						}
 					});
@@ -900,9 +1043,9 @@ var _user$project$Main$viewPage = F2(
 		}
 	});
 var _user$project$Main$viewRoute = function (model) {
-	var _p16 = A2(_elm_lang$core$Debug$log, 'maybeRoute=', model.page);
-	var _p17 = model.page;
-	if (_p17.ctor === 'Nothing') {
+	var _p18 = A2(_elm_lang$core$Debug$log, 'maybeRoute=', model.page);
+	var _p19 = model.page;
+	if (_p19.ctor === 'Nothing') {
 		return A2(
 			_elm_lang$html$Html$h2,
 			{ctor: '[]'},
@@ -912,25 +1055,43 @@ var _user$project$Main$viewRoute = function (model) {
 				_1: {ctor: '[]'}
 			});
 	} else {
-		return A2(_user$project$Main$viewPage, _p17._0, model);
+		return A2(_user$project$Main$viewPage, _p19._0, model);
 	}
 };
 var _user$project$Main$view = function (model) {
-	return _debois$elm_mdl$Material_Scheme$top(
-		A2(
-			_elm_lang$html$Html$div,
-			{ctor: '[]'},
+	return A3(
+		_debois$elm_mdl$Material_Scheme$topWithScheme,
+		_debois$elm_mdl$Material_Color$Teal,
+		_debois$elm_mdl$Material_Color$Indigo,
+		A4(
+			_debois$elm_mdl$Material_Layout$render,
+			_user$project$Main$Mdl,
+			model.mdl,
 			{
 				ctor: '::',
-				_0: A2(
-					_elm_lang$html$Html$h1,
-					{ctor: '[]'},
-					{
-						ctor: '::',
-						_0: _elm_lang$html$Html$text('Life Support User Manager'),
-						_1: {ctor: '[]'}
-					}),
-				_1: {
+				_0: _debois$elm_mdl$Material_Layout$fixedHeader,
+				_1: {ctor: '[]'}
+			},
+			{
+				header: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$h1,
+						{ctor: '[]'},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('Life support User Manger'),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				},
+				drawer: {ctor: '[]'},
+				tabs: {
+					ctor: '_Tuple2',
+					_0: {ctor: '[]'},
+					_1: {ctor: '[]'}
+				},
+				main: {
 					ctor: '::',
 					_0: A2(
 						_elm_lang$html$Html$ul,
@@ -944,19 +1105,7 @@ var _user$project$Main$view = function (model) {
 								_1: {
 									ctor: '::',
 									_0: '/users/',
-									_1: {
-										ctor: '::',
-										_0: '/users/1/',
-										_1: {
-											ctor: '::',
-											_0: '/users/2/',
-											_1: {
-												ctor: '::',
-												_0: '/users/3/',
-												_1: {ctor: '[]'}
-											}
-										}
-									}
+									_1: {ctor: '[]'}
 								}
 							})),
 					_1: {
